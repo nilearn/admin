@@ -1,0 +1,61 @@
+* Tasks for Nicolas
+
+  * address the confounds concern brought up by @pbellec
+  * create a test with matplotlib-dev, since these are occassionally reported
+
+    see e.g. https://github.com/nilearn/nilearn/pull/2583
+
+  * Fixing the circleCI artifacts https://github.com/nilearn/nilearn/issues/2508 
+  * Once more familiar with fMRI, could move on to HTML reports
+
+* finishing the current release
+
+  * experimental parts (nilearn.stats): Can either have a warning on import, or force users to import from nilearn.experimental. In sklearn, using the import from experimental route, but this is a whole module rather than small functions
+  * Conclusion: add a warning on import => create an issue https://github.com/nilearn/nilearn/issues/2587
+  *  Make sure Nicolas has access to nilearn PyPi account, relevant authorizations
+
+* longer term:
+
+  * improving the robustness of the package (reducing CI running time, removing some examples)
+  *  adding more html reporting
+  *  improving surface support
+
+
+* handling the project animation
+
+  * Taylor Salo joined as a core developer
+
+  * Nicolas is well-placed to see problems in contribution pipelines, since he's new to project
+
+  * Making sure that we have appropriate documentation throughout
+
+  * Some stalled pull requests (eg #1730) suffer from either overly ambitious visions for the feature
+
+  * Doing it once on your own data vs doing it in a robust way is too different scales
+
+  * there are differing expectations between smaller libraries and Nilearn (which leans towards more established libraries like numpy)
+
+  * Could have a review checklist added whenever a PR is opened
+
+    * Is it discussed in an issue
+    * Does it have tests
+    * Does it follow our coding guidelines
+    * If it's a feature : is it presented somewhere?
+    * We could review a few PR comments to know which one often comes back
+
+* If everyone makes it public that they are part of the GitHub nilearn organization, will be clearer to see who is involved in the project
+
+  * Invite activate core devs to monthly calls
+  * continuing shaping the project bottom-up with intrinsically motivated people
+  * adding a top-down management tool to give a more accessible view of the project
+  * improving issue labeling
+  * try to foster community feedback on some particular topics
+  * Make the current discussion visible: Publish meeting minutes in a new nilearn repo (maybe `admin` ?)
+
+* Draft Project Vision, share with people
+
+  * Example of similar transition point from another project: https://github.com/ME-ICA/tedana/pull/615
+  * Town Hall meeting after the release
+  * Once the project scope / vision is finalized
+
+

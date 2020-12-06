@@ -1,0 +1,31 @@
+First good task for the incoming engineer : getting to know the
+technical environment of the project and working on generalizing
+reporter object to all maskers.
+
+We agreed on several observations :
+
+*   we have troubles implicating more diverse people on the long run (regular contributors, core-devs and maybe high-level applicative advisors) but we're willing to improve. Ideas:
+ 
+  * give clearer product vision on what we expect for Nilearn
+  * better frame what we want / don't want as contributions
+  * contributing process and documentation have to be improved in order to lessen frustration and maintenance load
+  * synthetic recap of Nilearn main contributing guideline
+
+* we didn't release for too long. Release need to happen often, even if this mean having experimental features with reduced deprecation cycles
+* we have to transit to a more distributed decision process (at least formally), without creating additional burden
+
+* No clear consensus on organizational solutions : 
+
+  * continuing with the current issue organization
+  * continuing shaping the project bottom-up with intrinsically motivated people
+  * adding a top-down management tool to give a more accessible view of the project
+  * improving issue labeling
+  * try to foster community feedback on some particular topics
+
+* Different but compatible expectations for the short/mid-term roadmap of nilearn:
+
+  * finishing the current release
+  * working on organizational issues mentionned above
+  * improving the robustness of the package (reducing CI running time, removing some examples)
+  * adding more html reporting
+  * improving surface support

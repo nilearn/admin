@@ -1,2 +1,2 @@
 # admin
-Admin discussion relative to Nilearn
+Administrative discussion relative to Nilearn
