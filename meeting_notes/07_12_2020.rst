@@ -1,0 +1,90 @@
+* Feedback from Nicolas on the main issues he has identified 
+
+    - Issues
+    
+        - Issues are not assigned => hard to tell who is working on what
+         
+        -  What is the issue closing policy? Some issues are obviously resolved but left open and pollute the working env (ex: https://github.com/nilearn/nilearn/issues/2558), other issues are clearly outdated (ex: https://github.com/nilearn/nilearn/issues/1129)
+
+        - Comment on issues and ping in contributors, give two week deadline
+    
+            - "Stalled" label isn't used. 
+            
+            - Use of https://github.com/probot/stale ??
+
+        - Generally against using a bot, at least one that would automatically close (all) issues; could target specifically irreproducable bugs 
+
+        - Want to check on the wording to make sure that it's positive and that contributors are notified
+
+        - Not yet sure that this is a problem that a bot could solve. Will instead aim to have a meeting with Nicolas to go through the old issues and take decisions
+    
+            - Improve issue labeling, should we open a discussion/vote ?
+
+        - Often forgotten, even by developers
+
+        - Issue templates should be editted to automatically add labels
+
+        - Issue templates can be improved (a PR will not be seen negatively)
+        
+    - PRs
+        
+        - Lots of stalled PR => Cleaning, Pinging stalled PR?
+
+        - Tie into the contributing guidelines s.t. folks have a clearer idea moving forward
+
+        - For existing PRs, follow-up on conversations to see if will be mergable or keep for next sprint
+    
+    - Release cycle
+         
+        - Better usage of Milestones
+
+            - And the option to move one issue from one milestone to the next is always open is it delays the release
+    
+        - Define a more regular release cycle    
+
+            -Goal of every six - eight months. More is better if releasing is easy and we're not releasing buggy code
+
+            - Try to be a bit more closely tied to semantic versioning (i.e. increment major number at backwards incompatible changes)
+
+            - Clarify deprecation cycle, though want to avoid "Python 3 effect" of all deprecations at once
+
+            - Make sure these guidelines are prominently written down somewhere !
+        
+    - Contributing 
+    
+        - Now have an admin repo where meeting notes are visible: https://github.com/nilearn/admin :tada:
+    
+        - PR template?
+
+            - First update the contributing docs, then add a PR checklist
+
+            - First time contributor PR: https://github.com/nipreps/fmriprep/blob/master/.github/config.yml
+
+            - Eliz to put in other bot !
+    
+        - Improve doc on nilearn development process (especially governance, more distributed decision process?), more welcoming texts ??
+    
+        - specific discussion channel?
+        
+    - Documentation improvement
+
+        - Having a "big picture" figure showing all the things (visualizing, decoding, connectivity, glm...) nilearn can do 
+        
+        - refactor landing page: small amount of information
+        
+        - main messages
+        
+        - need to target many different communities (new users, advanced users, etc)
+        
+        - Add text explanations and contexts, especially in examples
+        
+        - look at other packages which we like to see their web layouts
+        
+        - Clean examples to reduce CI time (delete, merge, etc...)
+
+* handling of Travis or possible replacement (https://github.com/nilearn/nilearn/issues/2627)
+    
+    - Try sending a credit request to Travis (how much credit?). (Failed for scikit-learn, so probably a desperate move...)
+    
+    - Move everything to GitHub Actions and/or Azure Pipelines ?
+    
