@@ -42,7 +42,7 @@
     
         - Define a more regular release cycle    
 
-            -Goal of every six - eight months. More is better if releasing is easy and we're not releasing buggy code
+            - Goal of every six - eight months. More is better if releasing is easy and we're not releasing buggy code
 
             - Try to be a bit more closely tied to semantic versioning (i.e. increment major number at backwards incompatible changes)
 
