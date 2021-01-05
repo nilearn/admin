@@ -1,0 +1,86 @@
+* Testing/CI
+
+    - Still no answer from Travis.. 
+    
+    - Tests for Linux and MacOS have been moved to GitHub actions
+    
+    - Will re-contact Travis, aim to use their platform for ARM testing
+    
+* Maintenance
+  
+    - Drop Python 3.5 support (in version 0.8 ??)
+        
+        - Change deprecation warning to note that we will drop 3.5 support in 0.8
+        
+        - Could then support Nibabel 3 functionality (but nibabel 3 still pretty recent) in addition to Nibabel 2
+                              
+    - Next minor release for Nilearn ?
+
+        - 0.7.1 (planning for a release in Feb-ish to maintain a three-ish month release cycle)
+    
+* Issue cleaning: WIP...
+    
+    - Down to 286 open issues
+    
+    - Current strategy is to tackle old bug reports, first
+    
+    - Bertrand and Nicolas will meet in the next two weeks to have another joint issue-closing session
+    
+* Surface improvements: 
+  
+    - See issue https://github.com/nilearn/nilearn/issues/2171 and PR https://github.com/nilearn/nilearn/pull/2474 which add a Mesh namedtuple
+
+    - See also this long PR: https://github.com/nilearn/nilearn/pull/2424
+       
+    - Next Step: Surface namedtuple, update loading functions with backward compat, SurfaceMasker, SurfaceGLM...
+          
+        - Issue of backwards compatibility in moving from two arguments to one. 
+          
+        - One option is implementing new functions in a different module, otherwise could coerce old calls to be compatible with new functions
+          
+        -  Example usage:
+
+            surface = namedtuple('surface', ['mesh', 'data'])
+            
+            mesh = namedtuple('mesh', ['vertices', 'triangles']) 
+            
+            mesh = surf.mesh
+            
+            data = surf.data
+            
+            vertices = mesh.vertices
+            
+            triangles = mesh.triangles 
+
+        - Gael's summary of the sprint discussion: https://github.com/nilearn/nilearn/issues/2171#issuecomment-632623229
+
+        - Based off this discussion, Nibabel has an RFP open -- though we shouldn't expect much movement there quickly: https://github.com/nipy/nibabel/issues/936
+
+        - Could also improve the plotting capabilities for surfaces, maybe adding an optional dependency on plotly
+
+        - Will want to do the full installation to have the headless browser and be able to save out PNG
+
+        - Will also need to decide on functional calls (new functions ? kwargs to existing functions, which ?) (probably a new kwarg for plot_surf_... functions)
+
+        - Generally leaning towards coercing old calls to fit new function. Function signature only describes new function, a kwarg for surface_deprecated (or something) which will note that this usage will be removed in 0.9.0
+    
+* Enhancing contribution: PR checklist, improving guidelines...
+      
+    - Thomas is working on this -- to check in next month
+    
+* BIDS integration:
+
+    - Focus first on GLM derivatives; does not require PyBIDS
+    
+    - longer term: model specification à la fitlins
+    
+    - linter for GLM outputs ? 
+
+        - Hopefully will be feasible when derivatives/metadata are better supported in BIDS specification's schema (i.e., YAML files).
+    
+    - Need to look at current fitlins
+    
+* HTML reports: improve homogeneity?, Decoder reports?, thoughts?
+    
+    - Did not have time to discuss, delayed to next month
+
