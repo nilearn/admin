@@ -1,0 +1,62 @@
+Part 1 - Ongoing things in Nilearn
+----------------------------------
+
+* Handling datasets integrity with CircleCI ? (see PR 2752)
+	
+	- use simpler keys of the form v1-datasetname
+
+* Add correlation-based tool for MVPA ?? (see issue 2742)
+
+	- we need to better explain the nilearn vision and draw a clear line between in-scope and outof-scope features.
+
+* Contribution doc (see PR 2755)
+
+* Vision? (Bertrand)
+
+	Nilearn is an Open-source Python package for visualizing and analyzing human brain MRI data.
+
+	It provides statistical and machine-learning tools for brain mapping, connectivity estimation and predictive modelling. It brings visualization tools with instructive documentation & open community.
+	It supports general linear model (GLM) based analysis and leverages the scikit-learn Python toolbox for multivariate statistics with applications such as predictive modelling, classification, decoding, or connectivity analysis.
+
+	- prepare a longer version to help arguing about feature inclusion
+
+Part 2 - Coding sprint
+----------------------
+
+* remaining todos:
+
+	- Communication
+		- we took care of most of the items in the list (see 5).
+		- Remaining items? Post a reminder in a couple weeks?
+		- Send out email to registrants on the 26th
+		- Send out a poll (on Twitter a week before the hack, in same reminder email to registrants) with questions about what areas folks want to contribute to and what areas they want to know more about.
+		- Thomas will prepare the poll as a Google Form.
+		- Elizabeth: Compile list of current sprint registrants from email s.t. we can contact them more directly with questions and also with reminders
+
+	- People to contact directly? (Sent an email to Chris. Others?)
+		- Follow up with Chris about nibabel elements of hack.
+		- & Matthew Brett
+		- & Oscar Esteban
+
+	- Looking through current topics for sprint (https://nilearn.github.io/dev-days-2021/), we should prepare something and try to divide the topics among us:
+
+		- Taylor (& hopefully Chris): BIDS
+		- Gael: contribution crash course
+		- Gael: community feedback on nilearn website
+		- Nicolas: HTML reports
+		- Nicolas & Bertrand: what’s new & introduction to the sprint
+		- Jerome & Nicolas: Surface modeling
+		- Thomas : Barriers to adoption
+		a few seed question / a predefined small canvas(+ and -) to kick-off discussion
+
+	- Update website to switch timing of reports, surface modelling sessions
+
+	- Come up with very easy good first issues.
+		I was thinking about small documentation ENHs like adding terms to the glossary or improving some references with bibtex… (other ideas?)
+
+	- Have a look at the current project board
+		When reaching out to Nibabel, ask if we should add Nibabel issues to our existing project board or create a new Nibabel project board
+
+* next steps?
+	- Prepare slides till Friday 30th
+	- Add easy first issues: 50 people !
