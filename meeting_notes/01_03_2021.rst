@@ -1,0 +1,68 @@
+* Notepad failure
+
+	- Do we have notes from last meeting? Need to add them to admin repo.
+		Bertrand: open a ticket to try and recover it
+
+	- New pad URL?
+		Operating on HackMD for now, to revisit
+
+* Vision (Bertrand) ?
+
+	Lost with Notepad crash: for next time …
+
+* Contribution PR template (Thomas) ?
+
+	- Thomas to open draft PR with work to date
+
+	- Reviewed current draft as a group; Gael proposed a technical committee
+
+	- To review scikit-learn governance docs and tedana governance, Gael will take ownership on this, Thomas will ping Gael when needed
+
+	- Triage team to pull drive-by contributors in as regular contributors.
+
+	- Project board (there’s a bug triage template) or labels? fMRIPrep and other related tools have labels for expected impact and expected effort that might be useful.
+
+	- tedana governance documents: https://tedana.readthedocs.io/en/stable/contributing.html#governance
+
+	- scikit-learn governance documents: https://scikit-learn.org/stable/governance.html
+
+* Masker Reports
+
+	- comments/suggestions for current draft for NiftiLabelsMasker report: https://github.com/nilearn/nilearn/pull/2707
+
+	- Ideas for another masker? NiftiMapsMasker for example?
+
+* Surface function deprecation PR: https://github.com/nilearn/nilearn/pull/2682
+
+	- comments/suggestions/concerns?
+
+* 0.7.1 release
+
+	- Had to reschedule last week release party. Need to set up a new date.
+
+	- Dependency versions bump?
+		Avoid dependency version bump at minor release. Better suited for major release
+
+* Coding Sprint
+
+	- Dates
+		Thomas drafted initial schedule here
+
+	- Website and Tools. Same (crowdcast) as last year?
+		- Discord, HackMD
+		- Any need for crowdcast? Unlikely if no set talks. Will need to look into licensing if needed.
+		- Gather Town (or SpatialChat?) for coffee breaks, but not coding.
+	
+	- Communication around the event
+
+	- Speakers / Schedule
+		- TB will create document to add speaker info to.
+		- 3 half days, afternoons for Europe, mornings for US/Canada.
+
+* Issues / Enhancements / Doc / other tasks for sprint?
+
+* Other points??****
+
+* Intial website from last year’s drafts: https://emdupre.github.io/bulma-clean-theme/
+
+* repo : https://github.com/emdupre/bulma-clean-theme/
