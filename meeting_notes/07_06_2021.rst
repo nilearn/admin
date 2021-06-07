@@ -1,0 +1,69 @@
+- Sprint debrief
+
+    - Office hours
+
+        - We will organize office hours from now on starting June 28th
+        - These will take place every two weeks on Monday like MNE is doing : https://mne.discourse.group/t/announcing-mne-python-office-hours/2468
+        - We should advertise one week before (Twitter, Neurostars...) and make sure at least one core-dev will be available
+        - Time might be changed but we will try to stick with 6pm-7pm Paris time such that west coast can attend
+        - These hours will be held on Discord
+        - We need to add them to Nilearn calendar: https://calendar.google.com/calendar/u/3/r?cid=bmlsZWFybi5ldmVudHNAZ21haWwuY29t
+        - We need to advertise on the Website
+
+    - Website
+
+        - New post-sprint issue: https://github.com/nilearn/nilearn/issues/2824
+        - Improve searching (get rid of google search)
+        - Design/structure
+        - Interactivity (write interactive demo next to binder buttons): scikit learn example: https://scikit-learn.org/stable/auto_examples/calibration/plot_calibration_multiclass.html#sphx-glr-auto-examples-calibration-plot-calibration-multiclass-py
+        - Add office hours banner
+        - Remove sprint banner
+
+    - HTML reports
+
+        - Community wishes for more interactivity (browsing acrross subjects, interactive figures…)
+        - Sould we merge https://github.com/nilearn/nilearn/pull/2707 ?
+            - @gael: cursory look = looks great!
+            - We will continue discussion on the issue (problem of resampling at transform time although report is generated at fit time)
+
+    - BIDS integration
+
+        - @tsalo: The biggest development was the plan to write a lightweight version of pybids that could be a dependency for nilearn.
+        - @tsalo: We’ll also continue working on functions to write out BIDS-like derivatives, as in https://github.com/nilearn/nilearn/pull/2715, but would be good to extend beyond GLMs.
+        - @tsalo: Lastly, there was also talk about compiling benchmark datasets to be shared across projects (including pybids/BIDS-related tools).
+
+    - Surfaces
+
+        - Would be much easier if Nibabel could provide a format for us. Chris might be looking into this??
+        - Should we merge https://github.com/nilearn/nilearn/pull/2682 ?
+        - Plotly support
+
+- credentials (OSF and others)
+
+    - Nilearn account : https://osf.io/4r3jt/
+    - Eliz to add as admin on development_fmri data set
+    - Bertrand to add as admin on Nistats data sets
+    - Should we manage this better? (and other credentials…)
+        - How is scikit-learn doing this ? (@Gael??)
+
+- Rename master into main
+
+    - PR is ready: https://github.com/nilearn/nilearn/pull/2861
+    - Should we go for it? When?
+        - @gael : yes, now +++
+
+- next release of Nilearn
+
+    - 0.7.2 or 0.8.0??
+        - @gael: The list of new features is currently a bit light to call it a 0.8.0 IMHO
+        - @nicolas: Would prefer to hit 0.8.0 (drop Python 3.5)
+        - It was decided to jump to 0.8.0
+        - things that we should absolutely merge before?
+            - load_confounds preparation PR on sample_mask
+            - fsaverage6 (https://github.com/nilearn/nilearn/pull/2815)
+            - surface deprecation (https://github.com/nilearn/nilearn/pull/2682)
+        - Don’t wait on integration of load_confounds for release
+        - Nilearn project at OHBM hackathon ? https://github.com/ohbm/hackathon2021/issues
+        - When?
+            - Before OHBM --> around June 15th
+        - populate milestone 0.8
