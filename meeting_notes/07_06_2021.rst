@@ -45,6 +45,7 @@
     - Bertrand to add as admin on Nistats data sets
     - Should we manage this better? (and other credentials…)
         - How is scikit-learn doing this ? (@Gael??)
+        - scikit-learn is relying on openml.org
 
 - Rename master into main
 
