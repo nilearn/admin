@@ -1,0 +1,65 @@
+**Set up a triaging team** 
+
+    - Gael proposes, @bertrand will add people
+    - Permissions: edit issues, close them, change their labels
+    - Goals: help manage the issues
+    - Potential positive side effect: on-board more external contributors
+    - Team created as nilearn/triaging
+
+**Rename “master” branch to “main”**
+
+    - everybody is doing it
+    - This will be done after the sprint since Nibabel is still following master convention.
+    - This GitHub guide is useful : https://github.com/github/renaming/tree/040636ea50e945875c70cc964d586f645e9bd810#renaming-existing-branches
+
+**Sprint organization**
+
+    - touch base on what has been done
+    - communication (will send a last reminder on twitter and GitHub issue on Tuesday or Wednesday, others??) @NicolasGensollen
+    - website has been updated over the weekend to make resources like Discord easier to find. Opinions?
+    - Should we add the discord link in the github issue? (+: easy to find, - : might get some noise…) @NicolasGensollen
+    - poll (do we have some results to talk about?)
+    - How many registrants do we have so far? 115
+
+**Integration of load_confounds**
+
+    - pbellec and team proposed to integrate load_confounds into nilearn (see https://github.com/nilearn/nilearn/issues/2777). 
+    - Could be a good sprint item if we want to do it? Opinions?
+    - This hasn't been discussed due to time constraints.
+
+**slides/Notebooks**
+
+    - they’re here: https://github.com/nilearn/dev-days-2021/tree/main/Notebooks
+    - we have content for intro/whatsnew, HTML reports, and Surface modeling. Opinions, thoughts on these?
+    - agree on materials for other sessions:
+        - Contributing crash course
+        https://docs.google.com/presentation/d/1og9Ti4NG0wdUPabmGYfmgKiM2ysV2QLkv9hdwOxNg0A/edit?usp=sharing
+        - Community feedback on website
+        - BIDS
+            - Draft of slides at https://docs.google.com/presentation/d/1_kGRtB6xIE167GgM2_dN-6Kr4Ft0Q_cPNYK_IqfALkk/edit?usp=sharing
+        - Adoption : ask people to contribute to this kind of document, split participants in dedicated groups to think about a few promising improvements. https://hackmd.io/U1CMivSfQduTbCXjVlSG2g
+        - Eliz: Pluses / Deltas is a nice framework here : https://www.lucidmeetings.com/glossary/plus-delta
+    - Coordinate for presentations when multiple speakers
+
+**TODOS**
+
+    - Put the link to the Notebooks somewhere and add explanations (clone and launch) such that folks can follow along (@NicolasGensollen)
+    - Coordinate with Chris for the Nibabel whatsnew session (@NicolasGensollen)
+    - Change Friday schedule: move adoption at 2 and add closing session at 5 (@NicolasGensollen)
+    - populate google calendar @Bertrand
+    - opening:
+        - project vision : what goes in etc.
+        - managing expectations
+        - call for mutual help
+        - how people can help
+        - triage, review PRs, explain each other
+        - find focus on one thing
+        - [discord] voice channel to ask for quick help
+        - time organization
+        - help channel
+        - coffee break channel
+        - hours
+        - everything hapening on discord
+    - core-dev channel
+    - answer issue about correlation tool for MVPA (@ThomasBazeille)
+
