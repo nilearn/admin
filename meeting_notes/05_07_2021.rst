@@ -1,0 +1,65 @@
+- Current issues
+
+    - Correlation-base MVPA follow-up after last office hours (`#2742 <https://github.com/nilearn/nilearn/issues/2742>`_).
+        - `BrainIAK RSA<https://brainiak.org/tutorials/06-rsa/>`_.
+        - TODO : Close issue
+        - Optionally follow up with _BrainIAK_ and/or _PyRSA_ teams about aligning their approaches with _nilearn_ more.
+    
+    - Decoder cross-validation issue `#2883 <https://github.com/nilearn/nilearn/issues/2883>`_, `#2886 <https://github.com/nilearn/nilearn/issues/2886>`_.
+      - Advise users not to perform parameter selection/grid search with imaging data? Low statistical power, parameter selection is noisy process with high chance of overfitting. Do model averaging.
+      - Make sure that the thing runs using a GridSearchCV classifier
+      - Fix example and documentation so it's clear that there is no nested CV implemented/possible within Decoder.
+
+- Current PRs
+
+    - Contributing docs PR `#2755 <https://github.com/nilearn/nilearn/pull/2755>`_ (stalled, can we help you @thomas?)
+        - Please check out the recent build artifacts to see the issue with table rendering.
+    
+    - Deprecate surface functions API PR `#2682 <https://github.com/nilearn/nilearn/pull/2682>`_. Should we merge?
+        - Directly ask Chris whether nibabel is moving soon
+    
+    - Dev/Stable doc PR resurrected : `#2605 <https://github.com/nilearn/nilearn/pull/2605>`_.
+        - round of reviews, then merge
+
+    - Sphinx copybutton : `#2838 <https://github.com/nilearn/nilearn/pull/2838>`_.
+        - Eliz confirmed that prompts (`>>>`) not copied with sphinx-copybutton
+
+- Possible enhancements
+
+    - Plotly for plotting (see `#2793 <https://github.com/nilearn/nilearn/issues/2793>`_).
+        - green lights
+        - add plotly and kaleido as optional dependencies
+
+    - Type hinting
+        - @Gael: Don't discourage it, but don't force contributors to add type hints. Do it especially when it's not costly.
+        - @Taylor: Maybe look into sphinx extensions/settings to incorporate type hints into docstrings automatically.
+        - TODO : Incorporate request for, but not enforcement of, type hints in contributing guidelines?
+
+    - Follow-up on sprint discussions / suggested improvement
+        - BIDS PR for GLMs: `#2715 <https://github.com/nilearn/nilearn/pull/2715>`_.
+        - _pybids-light_ library for searching BIDS datasets with minimal overhead: work hasn't really started, but we have "plans":
+            - `Repo <https://github.com/bids-standard/pybids-light>`_.
+            - `HackMD <https://hackmd.io/vlC0NvzmSYKkVVNUXnKlHQ>`_.
+
+        - Surfaces: deprecation PR + check with Chris for better integration within Nibabel...
+    
+    - Easier customization of nilearn plots: (i) adding references to useful objects (eg the colorbar axis) to the objects returned by nilearn plotting functions (eg BaseSlicer) (ii) adding an "advanced plotting" example. related: `#2761 <https://github.com/nilearn/nilearn/issues/2761>`_.
+
+    - moving average pca? See `#2662 <https://github.com/nilearn/nilearn/issues/2662>`_.
+        - To be discussed next meeting.
+
+    - CircleCI artifacts : See `#2508 <https://github.com/nilearn/nilearn/issues/2508>`_.
+        - To be discussed next meeting.
+
+- Other
+
+    - @Nicolas in holidays (07 July - 18th July) ==> who can be there Monday 12th for the next office hours
+        - change date : July 19th
+    
+    - Do we maintain them over the summer?
+        - Skip the office hours in August.
+    
+    - Do we maintain core-dev meeting August 2nd?
+        - Skip the core-dev meeting of August.
+
+    - TODO: Onboarding new people in the team.
