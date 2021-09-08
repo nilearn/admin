@@ -1,0 +1,76 @@
+Note: Partial and shortened meeting due to labor day in the US and Canada.
+
+- Feature requests
+
+    - Smoothing function for surface based data
+      See this Neurostars post https://neurostars.org/t/smoothing-surface-data/20159.
+      Also related: https://github.com/nilearn/nilearn/issues/2747.
+
+        -> Would be a nice addition but we need to find the right balance between complexity
+           and simplicity for the implementation. Having a gaussian kernel width in mm as for
+           `smoth_img` might be overly complex while simply averaging accross one hop neighbors
+           in the mesh might lead to biases.
+        -> A possible approach could be to rely on a weighted graph where the edge weights
+           account for the lengths of the edges. From this graph, we could average accross
+           all neighbors within some distance.
+        -> @Gael: We need to look at fast methods to do that (based on the sparse adjacency
+           matrix?)
+        –> TODO: @NicolasGensollen will open an issue and explain problems and ideas to see
+           what people think/propose.
+
+- Current PRs
+
+    - Plotly PR is quite large and would benefit from more reviews.
+      See https://github.com/nilearn/nilearn/pull/2902.
+
+        -> @NicolasGensollen simplified the PR recently to ease the review process.
+        –> @NicolasGensollen: ask @jerome to see if Sebastien Urch could help with this.
+
+    - Contributing docs PR had some recent activity. 
+      See https://github.com/nilearn/nilearn/pull/2755.
+
+        -> @Thomas: PR is ready for reviews. It is already a significant improvement
+           and we can always iterate and improve in future PRs.
+    
+- Next release (0.8.1)
+
+    - Aiming for mid-september (before team retreat would be cool).
+        
+        -> @NicolasGensollen: Created a milestone for it.
+        -> Any PR and/or issue that need to be addressed?
+           -> Mostly contributing PR and Plotly PR (see point above).
+        -> @Gael: We can do a beta release before the team retreat and stable release
+           after.
+
+- Feedback on Office hours
+
+    - We had 3 events so far but relatively little interest
+      (2 persons for first one, and one person for last one)
+      Are there things to improve communication-wise?
+
+        -> People seem to be happy that these hours exist.
+        -> Leave message on Discord general channel giving the next office hours.
+           This will avoid hopefully people connecting and asking questions outside of
+           hours.
+        -> @Bertrand: The hours are also useful for us to work on Nilearn even though
+           nobody shows up.
+
+- Projects for the team retreat around Nilearn
+
+    - @Alexis proposed to tackle the website design
+
+        -> @Gael: This would be great but doesn't fit so well in the retreat projects
+           spirit traditionally more data oriented.
+        -> @Gael: Stephanie Noble can provide useful feedback for this.
+
+- Team members
+
+    - @Elizabeth mentioned last meeting that we should renew some of the core-dev team
+      members since @Thomas and @Elizabteh will defend soon.
+
+        --> @Gael: We should create more teams (triage, web, docs, core-devs...)
+        --> @Gael: We should propose to bump people up more easily. Especially if they are
+            motivated.
+        --> @all: We should ask Alexis Thual and Hao Ting to join the core-dev team
+
+
