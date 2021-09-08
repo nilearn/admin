@@ -72,7 +72,5 @@ Note: Partial and shortened meeting due to labor day in the US and Canada.
         --> @Gael: We should propose to bump people up more easily. Especially if they are
             motivated.
         --> @all: We should ask Alexis Thual and Hao Ting to join the core-dev team
-        --> Sage Hahn opened a interesting PR last year: https://github.com/nilearn/nilearn/pulls/sahahn
-            Might be to late but we can always get in touch.
 
 
