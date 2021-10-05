@@ -1,0 +1,59 @@
+- New team member(s)
+
+    - Core devs
+        - New member: Welcome Alexis!
+        - Bertrand also proposed to Hao-Ting to join the team.
+
+    - Triage
+        - Team is rather empty these days.
+        - We should ease access to the triage team.
+        - @elizabeth: One way could be to post on the general channel of the discord server and grant access to "anyone interested" (no push rights so risk is limited).
+        - We should add a few lines in contributing docs for defining what the triage team would be responsible to.
+        - We should also define other kind of contributions (like answering questions on neurostars, commenting on issues…).
+
+- Changing the name of the module `input_data`
+    
+    - Currently, `input_data` holds only the `NiftiMaskers`, while `masking` holds the masking utilities. 
+    - Additionally, the module name `input_data` does not make it clear that it contains masker objects.
+        - Would merging the two under a common `masking` module make sense?
+        - Potential risk: the resulting `masking` module could become too big.
+    
+    - There is ongoing work into adding confounds loading utilities to Nilearn (see [#2946](https://github.com/nilearn/nilearn/pull/2946)).
+        - At the moment, the plan is to add these to `input_data`, but again, the name isn't great for these.
+        - If we move maskers, or if we rename `input_data` in a more "masker-like" way, these confounds utilities would have to be put somewhere more appropriate.
+        - Should we create a new module for these? (`io`, `confounds`, `interfaces`...)
+            - Having a `io` module doesn't seem like a good idea because the scope of such a module would be too large.
+              For example, users would expect to find functions like `load_img` in there rather than masker objects.
+            - @Taylor: We could create an `interfaces` module with submodules (`fmriprep`, `bids`, `freesurfer`...)
+
+    - There is also ideas of having, one day, a `SurfaceMasker` object which could either go in `surface`, or with the other maskers in `input_data`.
+        - If `SurfaceMaskers` and `NiftiMaskers` will share the same kind of API, it’d make sense to have them all in the same module.
+        - This is especially true if `SurfaceMaskers` inherit from the `BaseMasker` class.
+
+    - *Unrelated but came out of the discussion:* it could be worth having a look at the `_utils` module and see if we should make some utilities public.
+
+    - Related:
+        - Why are `NiftiMaskers` called "nifti" (Daniel Gomez’s issue): [#2844](https://github.com/nilearn/nilearn/issues/2844)
+    
+    - Deprecation cycle length?
+        - Alias maskers in old module while moving? This would allow a long deprecation cycle.
+        - Changing the name of the maskers themselves (`VolumeMasker`, `Masker`...) is not worth it as it will break a lot of users code.
+
+    - Action points:
+        - We will think about these design questions and talk about them next meeting.
+        - Make the discussion public ==> open issue and see what people think.
+        - Do not wait for next meeting to merge [#2946](https://github.com/nilearn/nilearn/pull/2946).
+          Since next release is in three months, we could always change the module names before the release.
+
+- Pull Requests needing reviews
+
+    - [INFRA] Add dev docs deployment job [#2968](https://github.com/nilearn/nilearn/pull/2968)
+      - We agreed to merge and test it.
+
+    - [NF] migrate package load_confounds main function load_confounds [#2946](https://github.com/nilearn/nilearn/pull/2946)
+      - Bertrand will make another review.
+      - Anybody else is welcome to take a look.
+
+    - [ENH] Add Plotly support for surface plotting [#2902](https://github.com/nilearn/nilearn/pull/2902)
+      - Jerome will take a look.
+
