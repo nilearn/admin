@@ -1,0 +1,76 @@
+- New team member
+
+    - Core-dev:
+        - Welcome Hao-Ting! 
+
+- Office hours
+
+    - The time used until now was **4pm-5pm UTC every Monday**, which used to be 6pm-7pm Paris time, but is now 5pm-6pm due to winter time.
+    - This will overlap with future core-dev meetings.
+    - Core devs have previously mentionned the fact that the current time for office hours didn't fit well in their schedule.
+    - We agreed to change the office hours to **every Friday 4pm-5pm UTC**.
+    - Actions:
+
+        - Add a post in the relevant github issue. (Nicolas)
+        - Make a post on neurostars. (Nicolas)
+        - Tweet about it. (Nicolas)
+
+- Feature requests
+
+    - use [ancpbids](https://github.com/ANCPLabOldenburg/ancp-bids) to handle BIDS datasets: See issue [#3045](https://github.com/nilearn/nilearn/issues/3045) and PR [#3044](https://github.com/nilearn/nilearn/pull/3044)
+        
+        - The package is still quite new (created around summer 2021) and probably not mature/stable enough at this point to depend on it. 
+        - **Nicolas**: We need more tests and coverage information as well as proper documentation.
+        - **Taylor**: Erdal has been looking into using more established schema tools for the BIDS specification than what we currently use (which is just an _ad hoc_ YAML "standard" based on the actual JSON schema). He's also working on querying/file-generating tools for BIDS, as a sort of replacement for pybids, with the hope that the pybids team will adopt it. The combination of these two efforts is ancp-bids. Since his proposal for pybids would basically rebuild it from scratch and his proposal for the spec would involve adopting schema tools that not many folks have experience with. I think ancp-bids might be useable, but I worry about long-term support after he finishes his degree. I can try to take another look soon-ish to see what state ancp-bids is in and to determine if a reduced-dependency version might be workable?
+        - Actions:
+            - Short term: Help developing the package and see how it goes.
+            - Keep in touch with Erdal.
+            - Close the PR but keep the related issue open for discussions.
+
+- Current PRs
+
+    - Include Hierarchical KMeans in ``regions.Parcellations``: https://github.com/nilearn/nilearn/pull/2282
+        - Seems to be ready for merging.
+        - Actions:
+            - Jerome and bertrand will make one last review.
+    
+    - Refactor change logs: https://github.com/nilearn/nilearn/pull/3049
+        - Clear improvement over previous logs.
+    
+    - Plotly and Matplotlib surface figures: https://github.com/nilearn/nilearn/pull/3036
+        - Actions:
+            - Jerome will make another review.
+            - remove ``init_with_figure``
+
+    - ``NiftiMapsMasker`` Reporting: https://github.com/nilearn/nilearn/pull/2880
+        - Actions:
+            - Nicolas: Check that figures are not created all at the same time.
+            - Nicolas: Check integration within examples from docs.
+
+- ``input_data`` module discussion
+    - We spent a lot of time discussing this last meeting and decided to take a month to think about it.
+        - As a refresher, you can read the cleaned notes [here](https://github.com/nilearn/admin/blob/main/meeting_notes/04_10_2021.rst)
+        - Move all ``load_confounds`` utilities to ``interfaces.fmriprep``
+        - Taylor opened issue [#3014](https://github.com/nilearn/nilearn/issues/3014) to collect user feedbacks
+    - It's important to decide where we want to put the ``load_confounds`` utilities (currently in ``input_data``) before the next release as to avoid an unecessary deprecation cycle...
+    
+    - Actions:
+        - Create a new module ``interfaces``.
+        - Move all ``load_confounds`` utilities to ``interfaces.fmriprep``.
+        - Create a new module ``maskers``.
+        - Move all maskers from ``input_data`` to ``maskers``.
+        - Stop documenting ``input_data``.
+        - Keep imports in ``input_data`` with warnings for backward compatibility.
+        - Keep masking utilities in the ``masking`` module.
+
+- Plotting API, displays
+
+    - The objects from [displays.py](https://github.com/nilearn/nilearn/blob/main/nilearn/plotting/displays.py) look like they are public but only the ``OrthoSlicer`` appear in the [API docs](https://nilearn.github.io/stable/modules/reference.html#module-nilearn.plotting)
+    - This, combined with the lack of documentation, might be a reason why users have issues interacting with nilearn plots.
+    
+    - Proposal:
+        - Turn displays into a folder
+        - Seperate ``Slicers``, ``Projectors``, and new ``SurfaceFigure`` in different files.
+        - Write and/or improve docstrings of these objects.
+        - Add relevant objects to the API docs.
+        - Add a section somewhere in the user guide and/or modify some examples to showcase how to customize plots with these objects.
