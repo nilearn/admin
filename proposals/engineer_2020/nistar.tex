@@ -1,0 +1,228 @@
+\documentclass{article}
+\usepackage{lmodern}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{eurosym}
+\usepackage{multicol}
+\usepackage{comment}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb,amsfonts,amscd,latexsym}
+
+\geometry{hmargin=2.5cm,vmargin=2.5cm}
+
+% No bibliography title
+\usepackage{etoolbox}
+\patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
+
+\definecolor{deep_blue}{rgb}{0,.2,.5}
+\definecolor{dark_blue}{rgb}{0,.15,.5}
+
+\hypersetup{%pdftex, % needed for pdflatex
+  breaklinks=true, % so long urls are correctly broken across lines
+  colorlinks=true,
+  linkcolor=dark_blue,
+  citecolor=deep_blue,
+}
+
+\def\bsf{\bfseries\sffamily}
+\def\b{\beta}
+\def\X{\mathbf{X}}
+\def\Y{\mathbf{Y}}
+\def\Z{\mathbf{Z}}
+\def\U{\mathbf{U}}
+\def\V{\mathbf{V}} 
+\def\K{\mathbf{K}} 
+\def\E{\mathbf{E}}
+\def\w{\mathbf{w}} 
+\def\bb{\bar{\beta}}
+\def\beq{\begin{equation}} 
+\def\eeq{\end{equation}} 
+\def\st{s.t.} 
+\def\bb{\mathbf{b}} 
+\def\bbeta{{\boldsymbol \beta}} 
+\def\mcN{\mathcal{N}}
+\def\mbI{\mathbb{I}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\bigskip
+\pagestyle{empty}
+\vspace*{-3em}
+\hrule
+    \begin{minipage}{.23\linewidth}
+	\hspace*{-2ex}%
+	\includegraphics[width=\linewidth]{../logo_inria_couleur}
+    \end{minipage}%
+    \hfill%
+    \begin{minipage}{.2\linewidth}
+	\includegraphics[width=\linewidth]{../logo_parietal}
+    \end{minipage}%
+    \hfill%
+    \begin{minipage}{.15\linewidth}
+	\includegraphics[width=\linewidth]{../logo_cea}
+    \end{minipage}%
+    \\
+    \begin{minipage}{.6\linewidth}
+	\sf
+	INRIA Saclay, \qquad\qquad
+	Parietal team~
+	\small\rlap{\url{http://team.inria.fr/parietal}}
+    \end{minipage}
+    \hfill%
+    \begin{minipage}{.35\linewidth}
+    \sf\flushright\vspace*{-1em}
+    NeuroSpin, \\
+    \small bat 145, CEA Saclay
+    \end{minipage}
+    \bigskip
+    \vspace{5mm}
+\centerline{\bsf\Large
+Developer position: Machine learning for Brain Neuroimaging
+}
+\bigskip
+\setlength{\parindent}{0pt}%
+\enlargethispage{3em}
+\hfill%
+\begin{minipage}{.9\linewidth}
+  \hspace*{-2em}{\bsf Main topic:} open-source software for neuroimaging data analysis
+  
+\hspace*{-2em}{\bsf Keywords:} population imaging, visualization, machine learning
+
+% \hspace*{-2em}{\bsf Duration \& salary:} 4 to 6 months, 550\,\euro ~monthly 
+
+\hspace*{-2em}{\bsf Research team:} Parietal (INRIA Saclay and CEA)
+
+\hspace*{-2em}{\bsf Contact:} {Bertrand Thirion, {\tt bertrand.thirion@inria.fr}}
+
+\hspace*{-2em}{\bsf Start and duration of contract:} {\tt 01/09/2020, for 2 years}
+
+\hspace*{-2em}{\bsf Salary:} {\tt Depending on experience: 24 to 36 kE/year, free of charges.}
+
+\hspace*{-2em}{\bsf Application:} Interested candidate should send CV and
+motivation letter
+
+
+\end{minipage}
+
+\bigskip
+
+\section*{Mission}
+
+We are looking for a programmer to join our research group, Parietal
+team, at INRIA, to work on \href{http://nilearn.github.io}{Nilearn}, a
+library applying advanced machine learning and signal processing to
+functional brain imaging.
+
+As a programmer, you will be developing tools for the analysis of
+cognitive neuroscience and "functional connectivity" --brain
+connectivity inferred using functional MRI. Large databases have been
+made available with these types of data and require powerful data
+analysis software.
+
+The project unites neuroscientists, data-miners, statisticians and
+clinical researchers to transfer recent advances in basic neuroscience
+to clinical diagnostic tools.
+%
+Your duties will be to work hand in hand
+with the computer science and statistics researchers to turn the
+research code into a solid and well documented Python library usable
+by clinical researchers.
+%
+In particular, to make the core data-processing routines more usable,
+the project will develop specific data visualization. The technologies
+used rely on the scientific Python stack and scikit-learn machine
+learning library.
+
+\section*{Job Offer description}
+\begin{itemize}
+%  \item Integration of the Nistats library into Nilearn, in order to
+%    simplify the long term maintenance of thee libraries and have a
+%    more consistent framework for users.
+%  \item Improve Nilearn API with the introduction of more high-level
+%    objects for the sake of supervised analysis (decoder object) and
+  %    the estimation of patterns from the data (clustering object)
+\item Improvement and homogenization of the library API, generation
+  of automated reports for group analyses, facilitation of statistical
+  analyses (contrast specification).
+\item Integration within the \href{https://ebrains.eu}{EBRAINS} (Human
+  Brain Project) platform users to run connectivity analyses
+  (estimation, visualization, population modeling) there. This
+  involves the following steps: 1) Integrate of Nilearn into EBRAINS,
+  2) development of new functionalities for manipulation of brain
+  regions, integrated in the EBRAINS atlas viewer.
+  \item Integration of the NIDS and NIDM standards into Nilearn: these
+    will make data analysis easier by automatically obtaining
+    information on the data organization on the file system (BIDS) and
+    outputting artifacts compatible with other tools (NIDM).
+   \item Introduction of advanced tools developed by
+     Parietal, e.g. efficient multivariate estimators, for which we
+     already have academic results and code, but the integration
+     (uniform API, cleaning and documentation) still has to be done.
+   \item Animation of the developers community, organization of \href{https://nilearn.github.io/dev-days-2020/}{events}
+     (brainhack, coding sprints, training on software development).
+\end{itemize}
+
+\section*{Skills and profile}
+
+\begin{itemize}
+\item love high-quality code and open source
+\item worry about users and like to communicate
+\item be curious about data (ie like looking at data and understanding it)
+\item have an affinity for problem-solving tradeoffs
+\item good scientific Python coders
+\item enjoy interacting with a community of developers
+\item interest in brain imaging and its applications.
+\end{itemize}
+
+
+\section*{Working at Inria}
+Established in 1967, Inria is the only public research body fully
+dedicated to computational sciences.
+
+Combining computer sciences with mathematics, Inria’s 3,500
+researchers strive to invent the digital technologies of the
+future. Educated at leading international universities, they
+creatively integrate basic research with applied research and dedicate
+themselves to solving real problems, collaborating with the main
+players in public and private research in France and abroad and
+transferring the fruits of their work to innovative companies.
+
+The researchers at Inria published over 4,500 articles in 2019. They
+are behind over 300 active patents and 120 start-ups. The 172 project
+teams are distributed in eight research centers located throughout
+France.
+
+\subsection*{Working with Parietal team}
+Besides permanent researchers, the developer will be in contact with
+PhD students that do software development as part of their PhD
+contract, and with the developer team that contributes to scikit-learn
+and Joblib, supported by the scikit-learn consortium.
+%
+He or she will also be in contact with cognitive and clinical
+neuroscientists at NeuroSpin.
+
+Parietal researchers use English as a common language for their
+activities (daily interactions, weekly meetings, yearly retreats).
+
+
+\subsection*{Benefits}
+
+\begin{itemize}
+\item Canteen and cafeteria;
+\item Sports equipment;
+\item Transport reimbursement 
+\end{itemize}
+
+%\bibliographystyle{ieeetr} 
+%\bibliography{biblio.bib}
+
+
+\end{document}
+
