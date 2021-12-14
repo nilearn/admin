@@ -26,7 +26,7 @@
 
 \medskip
 
-\noindent Efficient and reproducible science depends on a strong software ecosystem \cite{Poldrack2019}. We present here Nilearn, a Python package empowering the neuroimaging community by enabling fast and easy statistical learning on fMRI data: \url{https://nilearn.github.io}. It has been under continuous development for close to 10 years and is about to reach its 0.9 release. It is now part of the neuroimaging tools ecosystem with approximately 800 stars, 450 forks, and 155 contributors on GitHub, as well as more than 300 discussions on the forum Neurostars.
+\noindent Efficient and reproducible science depends on a strong software ecosystem \cite{Poldrack2019}. We present here Nilearn, a Python package empowering the neuroimaging community by enabling fast and easy statistical learning on fMRI data: \url{https://nilearn.github.io}. It has been under continuous development for close to 10 years and is about to reach its 0.9 release. It is now part of the neuroimaging tools ecosystem with approximately 800 stars, 450 forks, and 155 contributors on GitHub, as well as more than 300 discussions on the forum \href{https://neurostars.org/}{Neurostars}.
 
 \medskip
 
@@ -38,7 +38,7 @@
 
 \medskip
 
-\noindent Nilearn is a community-led open-source project, developed and used by researchers in neuroimaging and machine-learning. It strives to be easy to use with simple code and focuses only on reliable and well-established methods. User guides provide an introduction to machine learning and statistics for fMRI with examples showcasing all functionalities. Tutorials, coding sprints, as well as weekly office hours are also organized to engage the neuroimaging community.
+\noindent Nilearn is a community-led open-source project, developed and used by researchers in neuroimaging and machine-learning. It strives to be easy to use with simple code and focuses only on reliable and well-established methods. \href{https://nilearn.github.io/stable/user_guide.html}{User guides} provide an introduction to machine learning and statistics for fMRI with \href{https://nilearn.github.io/stable/auto_examples/index.html}{examples} showcasing all functionalities. Tutorials, coding sprints, as well as weekly office hours are also organized to engage the neuroimaging community.
 
 \medskip
 
@@ -62,15 +62,16 @@
 	\item Model selection and validation, parallelism, and caching.
 \end{itemize}
 
-\noindent In its 0.7 release, Nilearn includes in a new glm module with all the functionalities of its previous sister’s project Nistats. This enables fitting mass univariate linear models in a consistent pipeline with simpler dependencies.
+\noindent In recent releases, efforts have been made on improving the visualization capabilities of Nilearn. For example, it is now possible to visualize statistical maps on the surface interactively (see fig. \ref{fig:figure_1}). In addition, most classic plotting functions can now use a "mosaic" display mode enabling to visualize cuts of the brain organized on a 2D grid.
 
 \medskip
 
-\noindent A new Decoder object was also added to ease classification and regression tasks in a decoding pipeline. It implements a model selection scheme that averages the best models within a cross validation loop. These objects are tailored for usability and provide for example a direct interface with Nifti files on disk. In addition, the decoder objects pipeline have been extended with one fast clustering step at the beginning (yielding an implicit spatial regularization) and aggregates a high number of estimators trained on various splits of the training set. This returns a state-of-the-art decoding pipeline at a low computational cost (see fig. \ref{fig:figure_1}).
+\noindent Nilearn also aims at making interpretation of results easier. To this end, Nilearn provides HTML reports with most of its estimators and models. Recently, reporting capabilities were added to the \textit{NiftiLabelsMasker} and the \textit{NiftiMapsMasker}, two central estimators of classical machine learning pipelines in Nilearn. Figure \ref{fig:figure_2} shows a screenshot of a \textit{NiftiMapsMasker} report, which enables browsing through spatial maps overlaid on top of a functional image.
 
 \medskip
 
-\noindent Nilearn is also extensively used for its plotting capabilities (see fig. \ref{fig:figure_2}). New plotting functions have been added and enable, for example, plotting contours of regions of interest on surfaces, visualizing events file, or generating carpet plots for visualizing global patterns in 4D functional data over time.
+\noindent Nilearn is a community-driven project with an international pool of users and contributors continuously improving the tool. In order to help new contributors and organize the decision making process, the \href{https://nilearn.github.io/dev/development.html}{contributing documentations} has been largely improved.
+
 
 \bigskip
 
@@ -85,15 +86,15 @@
 
 \begin{figure}[htp]
 	\centering
-	\includegraphics[scale=.8]{./figure_1}
-	\caption{Example of loading data, fitting a decoder, and plotting the resulting statistical map in a few lines of Python code.}
+	\includegraphics[scale=.25]{./figure_1}
+	\caption{Example of interactively plotting a statistical map on the surface. It is possible to rotate the surface, zoom in and out...}
 	\label{fig:figure_1}
 \end{figure}
 
 \begin{figure}[hbp]
 	\centering
-	\includegraphics[scale=.8]{./figure_2}
-	\caption{Example of surface based first level analysis.}
+	\includegraphics[scale=.33]{./figure_2}
+	\caption{Example of report obtained with the NiftiMapsMasker object.}
 	\label{fig:figure_2}
 \end{figure}
 
