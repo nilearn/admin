@@ -1,0 +1,48 @@
+- Next core-dev meeting will be **January 10th** instead of January 3rd.
+
+- Current issues
+    - General atlas fetcher and templateflow: [#3074](https://github.com/nilearn/nilearn/issues/3074).
+        - Actions on the Nilearn's side: [#3075](https://github.com/nilearn/nilearn/issues/3075)
+        - Other actions (Nicolas need to add them to the issue #3075):
+            - Add a pointer to templateflow in the documentation of Nilearn.
+            - Explain that the ambition of Nilearn is not to provide a tool to fetch any atlase or dataset from the internet. Nilearn maintains a few specific fetchers for enabling easy experimentation and providing interesting examples. Adding fetchers is very costly in terms of maintenance and CI time.
+            - For these reasons, we should remove from the documentation of Nilearn that we welcome new atlas fetchers.
+
+- Current PRs
+        - Include Hierarchical KMeans in `nilearn.regions.Parcellations`: [#2282](https://github.com/nilearn/nilearn/pull/2282).
+            - Thomas will take a look at Jerome's latest review and take his comments into account.
+        - Add displays to API: [#3073](https://github.com/nilearn/nilearn/pull/3073).
+            - Needs some reviews
+        - New maskers module: [#3065](https://github.com/nilearn/nilearn/pull/3065).
+            - Needs some reviews
+
+- Next release
+    - Around December 15th or should we wait for early January?
+        - It was decided to release early January to avoid solving potential bugs during Holidays.
+        - Great tweet idea from Elizabeth: "New year, new nilearn"
+        - 0.8.2 or 0.9.0?
+            - Agreed on 0.9.0
+            - The highlight of the release will be the plotly surface plots
+
+- General improvements discussion
+    - Improving BIDS support of Nilearn is still one of the main directions for development, but still lacks clear action points for now. Raphael is currently investigating.
+    - Other ideas/suggestions?
+        - Jerome: Improving surface plotting capabilities (for example: adding contours (especially for plotly), handle connectomes in plotly...).
+        - Jerome: Enable drawing contours of regions with plotly and matplotlib (currently contour lines are made through triangles at the border which prevent from setting the linewidth for example).
+        - Alexis: Improve the shapes of the GLM reports design matrices.
+        - Alexis: Improve the interactivity of the GLM reports.
+
+- Engineer job description for Nilearn
+    - Action points:
+        - Bertrand will add the latex sources to the Nilearn admin repo.
+        - All core-devs will take a look and make suggestions.
+        - We aim to publish the new position this week or early next week.
+    - Alexis suggested that we add scenarios for the position.
+
+- Development (not discussed because of time, to be added to next agenda)
+    - Should we add a roadmap page to the docs?
+        - https://nipy.org/nibabel/devel/roadmap.html
+        - https://scikit-learn.org/stable/roadmap.html
+    - Go further with development proposals?
+        - ex: https://nipy.org/nibabel/devel/biaps/biap_0000.html
+        - Nilearn Development Proposals (NDPs) or something alike?
