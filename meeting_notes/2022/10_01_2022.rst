@@ -1,0 +1,49 @@
+- Documentation
+
+	- Questions from Taylor: 
+
+		- Would it be reasonable to include modeling examples in the docs that involve fairly common analyses, but more custom code? For example:
+			- Task-based functional connectivity with beta series (LSA, LSS) and Psychophysiological interactions (PPI)
+			- A FIR example focused on HRF estimation instead of localization, perhaps combined with custom HRF use. Preferably this would involve both FIR and standard HRFs in the same design matrix, for different conditions.
+				- Look at recent Kay paper on naturalistic dataset with custom HRF modeling. (space-varying HRF?). https://www.nature.com/articles/s41593-021-00962-x.
+				- Given how finicky this analysis is, maybe just link to other package that does this.
+			- Modeling with parametric modulation vs. duration modulation.
+				-Look at reaction time in existing datasets.
+			- Incorporating temporal and dispersion derivatives into results, as in Calhoun et al. (2004).
+				- Bertrand: We need to check.
+			- An alternative might be to have some of these methods in a separate repo, housed in a Jupyter book.
+				- Bertrand: Some of these examples (eg FIR) seem within-scope.
+				- Hao-Ting: Need to look into datasets that would work for PPI.
+
+	- New documentation theme (Alexis)
+		- We had a small demo last Friday for the office hour.
+		- Alexis will open an issue and a PR with the current work he has done.
+	
+	- Re-organize the landing page?
+		- Carousel will not work with the new theme
+		- Good opportunity to re-design the landing page
+		- Need to do some thinking (alexis will open an issue in Nilearn and possibly make some suggestions)
+
+- Release 0.9.0
+
+	- Goal: Make the release before the end of January (ideally at the end of the week of the 17th)
+	- See milestone: `#19 <https://github.com/nilearn/nilearn/milestone/19>`_
+	- Replace numpy with pandas in data loaders (`#2829 <https://github.com/nilearn/nilearn/pull/2829>`_)
+		- Goal: get rid of rec arrays in favor of pandas dataframes
+		- A deprecation warning was already there since a couple releases but we should enforce a better deprecation cycle
+		- Fetchers will expose a kwarg enabling to return rec arrays or pandas dataframe
+		- The default behavior will be rec arrays with a warning for backward compatibility.
+		- Jerôme: We should have the dataframes built in such a way that calling `to_records()` on them gives the previous behavior. Existing tests will only have to be modified in this way.
+	- New maskers module (`#3065 <https://github.com/nilearn/nilearn/pull/3065>`_)
+		- 3 approvals so far (bertrand, Jerome, and Taylor).
+		- Should we have another core-dev reviewing it?
+			- Let's merge!
+	- Include Hierarchical KMeans in `regions.Parcellations` (`#2282 <https://github.com/nilearn/nilearn/pull/2282>`_)
+		- Bertrand will take a closer look at potential remaining issues
+	- Refactor plot_matrix (`#3001 <https://github.com/nilearn/nilearn/pull/3001>`_)
+		- Needs another review
+
+- Current issues
+
+	- Move BIDS- and FSL-related functions from _utils to interfaces module (see issue `#3118 <https://github.com/nilearn/nilearn/issues/3118>`_)
+		- Agreed to do it and make these functions public
