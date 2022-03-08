@@ -1,0 +1,45 @@
+General
+-------
+
+- News from the engineer job posting (Bertrand)
+    - One candidate identified: Yasmin Mzayek ; itw by Nicolas pending ; might arrive on April 1st 
+- Montreal job posting: JB will write posting
+    - Jérôme and Elizabeth will edit the [existing posting](https://github.com/nilearn/admin/tree/main/proposals/engineer_2022) as a first pass
+    - New overleaf document available here : https://www.overleaf.com/3674263154gyndmhhjpngh
+- Organization for next meetings and office hours?
+    - Nicolas: availability ?
+        - Current time for office hours should work most of the times plus/minus a conflict from time to time
+        - Current time for core-dev meetings works very poorly for me. Tuesday same time would be better
+            - Update to Tuesday 6pm CET moving forward
+    - Should someone else organize these? (Bertrand for the time being)
+- hackathon in 2022 ? Coupled with OHBM ? Brainhack ? Any better suggestion ?
+- OHBM Brainhack (16-18 June) will be hybrid, Nilearn would be a good project to submit with well-curated issues for beginners
+- *Not* hold a Nilearn Dev Days this year and instead focus on the BrainHack
+- Currently applying for funding for an in-person event in autumn in Montreal
+    - Aim to have a Montreal-based developer before the event
+
+Open Issues
+-----------
+
+- [#3132](https://github.com/nilearn/nilearn/issues/3132) :  Inconsistent behaviour of inverse_transform() in masker classes
+    - Revive stale PR
+- [#3122](https://github.com/nilearn/nilearn/issues/3122): Refactor documentation's theme
+    - Pick up with Alexis directly
+- [#3085](https://github.com/nilearn/nilearn/issues/3085): correspondance between atlas region labels and NiftiLabelsMasker's output dimensions
+    - Allow use of dictionary for labels. Deprecate use of list, but make the deprecation cycle very long since atlases use lists and users are used to lists.
+    - Update atlases to have new dictionary label attribute. Don't replace the old one, just add a new one.
+- [#3058](https://github.com/nilearn/nilearn/issues/3058): Passing a 4D image to SecondLevelModel 
+- [#3120](https://github.com/nilearn/nilearn/issues/3120): view_img always masks bg_img with MNI mask
+    - threshold only when using Nilearn default option; never threshold image when user-provided
+
+Other points
+------------
+
+- Jupyter book of advanced analyses?
+    - Too much work for nilearn team, but maybe link to workshops/tutorials that use nilearn in documentation.
+        - Would be useful to have this list even internally to create metrics for e.g. funding applications in the future
+        - List of tutorials should document which versions of Nilearn they run under (and e.g. date of workshop)
+    - More general question of how to handle compute-heavy examples
+        - Could pitch developing these examples as a hackathon project ?
+
+
