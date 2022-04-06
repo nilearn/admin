@@ -1,0 +1,35 @@
+General points
+--------------
+
+- News from the engineer job posting? (Bertrand)
+    - Currently hiring: Yasmin Mzayek ; might arrive on April 1st
+- Montreal job posting: JB will write posting
+    - Jérôme and Elizabeth will edit the [existing posting](https://github.com/nilearn/admin/tree/main/proposals/engineer_2022) as a first pass
+    - New overleaf document available here : https://www.overleaf.com/3674263154gyndmhhjpngh
+    - updates ? Not yet ready, we will update ASAP and circulate 
+- Parietal (B.Thirion and A.Gramfort) got a small grant with people at Montreal (P.Bellec and K.Jerbi) to pay for travel and collaborations
+    - mostly dedicated to software aspects: Nilearn and MNE
+    - most actions targeted in 2022: brain hack at OHBM 2022 and Main conference in October
+- Updates on OHBM brainhack ? (16-18 June)
+
+Open Issues and PRs
+-------------------
+
+- [#3167](https://github.com/nilearn/nilearn/issues/3167) 64-bit integer NIfTI images
+    - Will require identifying where Nilearn writes out images and update to avoid creating int64. Wide (if not difficult) changes
+- [#3158](https://github.com/nilearn/nilearn/issues/3158) Add note for new maskers module in examples
+- [#3173](https://github.com/nilearn/nilearn/issues/3173) Allow not scaling background maps for surface plots (PR by A.Thual)
+    - Still looking to add [flat maps](https://github.com/tknapen/tknapen.github.io/wiki/Pycortex-flattening) for different fsaverage resolutions. Alexis will contact Alex Huth to see whether he can provide existing maps
+    - Open question as to how to update the API to better accomodate new parameters -- input welcome !
+- [#3172](https://github.com/nilearn/nilearn/issues/3172) [ENH] Radiological view for cross-sectional MRI plotting
+    - Provide guidance for new contributor as needed
+- [#3122](https://github.com/nilearn/nilearn/issues/3122): Refactor documentation's theme
+    - Changes to Sphinx-Gallery now merged (:tada:) to allow for hierarchical structure
+    - Developers can divide docs to run through individual categories
+    - Alexis will generate a live preview and then it can be divided among the developers, with Alexis' guidance on what should be evaluated
+    - Could be good to have Yasmin's review on the doc structure as part of orienting to the library
+- [#3085](https://github.com/nilearn/nilearn/issues/3085): correspondence between atlas region labels and NiftiLabelsMasker's output dimensions
+    - Allow use of dictionary for labels. Deprecate use of list, but make the deprecation cycle very long since atlases use lists and users are used to lists.
+    - Update atlases to have new dictionary label attribute. Don't replace the old one, just add a new one.
+- [#3160](https://github.com/nilearn/nilearn/issues/3160)
+    - Could merit a sooner patch release
