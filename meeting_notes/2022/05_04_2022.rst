@@ -1,0 +1,26 @@
+General points
+--------------
+
+- Time set-up for office hours (UTC time or ... ?)
+    - [Nipy calendar](https://calendar.google.com/calendar/u/0?cid=ZjJwM3E5NWs1aHBiaHBpaTQ5czJoZWFpY3NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ)
+- CircleCI now has a 1h limit of build time for its free plan which means that all full build are currently canceled in our CI pipelines. (@Nicolas)
+    - Bertrand : I can take the point
+- Nilearn job posting / CZI
+- Brainhack 2022 / OHBM Glasgow: any more info ?
+    - [Brainhack landing page](https://ohbm.github.io/hackathon2022/)
+- [name=Gael] Me stepping down officially?
+    - After a few farewell drinks at OHBM
+
+
+Open Issues and PRs
+-------------------
+
+- Patch release 0.9.1 (@Nicolas)
+    - What is still missing?
+    - Due date?
+    - decision: merge 3098 and do 3158, then release
+- New documentation theme PR [#3125](https://github.com/nilearn/nilearn/pull/3125)
+    - need to proof read User Guide
+    - should be able to deploy next time we meet
+- Background images PR [#3173](https://github.com/nilearn/nilearn/pull/3173)
+    - integrate changes for `view_*()` methods in different PR for easier reviewing
