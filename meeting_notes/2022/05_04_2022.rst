@@ -5,6 +5,8 @@ General points
     - [Nipy calendar](https://calendar.google.com/calendar/u/0?cid=ZjJwM3E5NWs1aHBiaHBpaTQ5czJoZWFpY3NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ)
 - CircleCI now has a 1h limit of build time for its free plan which means that all full build are currently canceled in our CI pipelines. (@Nicolas)
     - Bertrand : I can take the point
+    - CircleCI plans: [here](https://circleci.com/pricing/)
+    - The Performance plan (starting a 15$/month) has a limit of 3 hours which should be enough for building Nilearn's documentation (see [here](https://support.circleci.com/hc/en-us/articles/4411086979867-Updates-to-maximum-duration-of-jobs)).
 - Nilearn job posting / CZI
 - Brainhack 2022 / OHBM Glasgow: any more info ?
     - [Brainhack landing page](https://ohbm.github.io/hackathon2022/)
