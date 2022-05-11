@@ -5,7 +5,7 @@ General points
     - `To-do list and material needed for this round <https://github.com/nilearn/Applications/tree/main/2022-CZI-EOSS-Cycle-5>`_
     - who is the grant's PI ?
     - what do we need in terms of official (University) support ?
-    - ~~Need letters from other partners projects (fitlins, MNE, ...) ?~~
+    - We do not need letters from other partners projects (fitlins, MNE, ...)
 - CircleCI:
     - we have bought a plan (currently working)
     - after discussing with the CircleCI people, there seems to be a free OSS plan (tbc)
