@@ -8,7 +8,7 @@ General points
     - ~~Need letters from other partners projects (fitlins, MNE, ...) ?~~
 - CircleCI:
     - we have bought a plan (currently working)
-    - after discussing th CircleCI people there seems to be a free OSS plan (tbc)
+    - after discussing with the CircleCI people, there seems to be a free OSS plan (tbc)
     - opened issue (`#3239 <https://github.com/nilearn/nilearn/issues/3239>`_)
 - updates on Brainhack OHBM'22 
     - Hao-ting, Elizabeth attending in person, Bertrand virtually, Taylor (probably) virtually
