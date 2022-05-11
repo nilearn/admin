@@ -26,6 +26,6 @@ Open Issues and PRs
 - `0.9.1` tests fail with 4 `Assertion Errors` in `interfaces/fmriprep/tests/test_load_confounds.py` (`#3232 <https://github.com/nilearn/nilearn/issues/3232>`_)
     - Hao-Ting: Rounding error? How to proceed with this kind of bug
         - Increase the length of the simulated signal
-        - Investigate the collinearality of the confounds
+        - Investigate the collinearity of the confounds
 - GLM+TFCE PR (`#3196 <https://github.com/nilearn/nilearn/pull/3196>`_) may need one more review.
 - There are several "multivariate" tests for `permuted_ols` that (1) are not multivariate and (2) are just duplicates of existing univariate tests. Would it be okay to remove them, or do we need to open an issue to fix them?
