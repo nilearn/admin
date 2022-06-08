@@ -1,0 +1,40 @@
+General points
+--------------
+
+- CZI application submitted!
+- Updates on Brainhack OHBM’22
+    - Nilearn project submission
+    - Nilearn talk: put the talk on GitHub so everyone can review it!
+- CircleCI plan
+    - Are we happy with this? Keep?
+    - Any news on open-source version?
+    - See `#3239 <https://github.com/nilearn/nilearn/issues/3239>`_
+- Cleanup of `Nilearn.github.io` - Nicolas will delete older folders in root
+    - Relating to comment of Nicolas in `#3270 <https://github.com/nilearn/nilearn/issues/3270>`_
+    - Search functionality on our github pages
+        - Google search does not lead to stable pages
+- EuroSciPy 2022 (Monday, August 29 to Friday, September 2 in Basel)
+    - Suggestion to submit proposal to present Nilearn
+    - Ask Raphael if he's interested (Yasmin)
+- Nilearn office hours summer break
+    - This Friday: announcing for Brainhack (Yasmin)
+    - Break from next week, restart in September
+    - Rethink the format
+        - Theme
+        - Monthly townhall?
+        - Look at other projects (e.g., MNE-Python)
+        - Request feedback at BrainHack / OHBM
+
+Open Issues and PRs
+-------------------
+
+- Update surface functions `#2682 <https://github.com/nilearn/nilearn/issues/2682>`_ Should we wait for nibabel's SurfaceImage to be implemented ? Coordinate with nibabel team.
+    - Approach nibabel team at OHBM
+    - nibabel office hours (there's a session available this week, see `nipy discourse <https://nipy.discourse.group/t/announcement-nibabel-office-hours/118>`_)
+- Adding a Code of Conduct `#3264 <https://github.com/nilearn/nilearn/issues/3264>`_
+    - Combine nipy and contributor covenant?
+    - open a PR with contributor covenant
+- PR `2725 <https://github.com/nilearn/nilearn/pull/2725>`_ - consistent 1D inputs for `inverse_transform`
+    - James identified the maskers that might return 3D outputs at the moment: https://github.com/nilearn/nilearn/issues/2726#issuecomment-794575338
+    - We should review the maskers' inverse_transform and GLM outputs to see what produces 4D vs. 3D. Open an issue about it.
+    - Consensus is that it would be reasonable to return 3D outputs when it is clear that there is no sample dimension (though there are probably backwards-incompatibility issues to deal with).
