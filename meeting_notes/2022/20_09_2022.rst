@@ -1,0 +1,43 @@
+General points
+--------------
+
+- CZI application accepted
+    - Ideally constrain position to Montreal but can consider other options (e.g. consulting)
+    - Make a posting to push through our networks
+        - Edit community-oriented posting here : https://www.overleaf.com/3674263154gyndmhhjpngh
+        - First pass at places to advertise the posting :
+            - https://github.com/nilearn/dev-days-2020/issues/9
+            - https://github.com/nilearn/dev-days-2021/issues/5
+    - Update previous McGill Seb position
+        - Relevant information from Seb for creating posting for McGill:
+            - the McGill position has to match the applicant experience pretty closely, hiring an applicant on a specific profile has to be justified and approved by admin (who I don't know). If you are looking for some "super interesting" reading, check this out: https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjvjJH04qP6[…]job_catalog_june_2021_3.xlsx&usg=AOvVaw3wWzitEgmQnX7CU_a5ridT
+            - the roles we were told would fit for our original call (pretty senior dev) were, in order of seniority:
+                - IST2R
+                - IST3S
+                - IST3R
+- Major release and setting milestones
+    - Yasmin will start setting milestones
+- New documentation theme
+    - Dev/stable banner is gone
+        - Look into making a way to toggle between two (open an issue)
+    - News section is gone, do we want it back?
+        - Update maintenance doc to take out news sections update instructions
+    - Update what's new to changelog? Decision: no, keep the same
+- Reorganizing website (see `comment <https://github.com/nilearn/nilearn/pull/3125#issuecomment-1196040759>`_)
+    - Think about our audience
+        - CS or neuro background (or both)
+    - Restructuring user guide
+        - Reodering topics so order is more logical (start here)
+    - Cleaning and organization of examples
+        - e.g. see discussion in issue `2283 <https://github.com/nilearn/nilearn/issues/2283>`_ about deprecating some fetchers
+        - Can we get analytics data on examples? (Yasmin)
+            - Alexis suggested https://matomo.org/pricing/?menu
+    - Which topics/sections should be prominent and which can be buried or removed
+    - See if we can get inspiration from https://psy3018.github.io/cartes_cerebrales.html (eliz : but try to be careful about keeping content in scope)
+- Discussion with Chris about surface data support
+    - See `Coordinate Image API <https://nipy.org/nibabel/devel/biaps/biap_0009.html>`_
+    - Also nibabel PR `#1090 <https://github.com/nipy/nibabel/pull/1090>`_
+    - This will take a long time to finish, shall we move on with our own implementation?
+    - Jerome: If we want to move forward with nilearn Surface object we need to rethink its structure
+    - Plan a brainstorm session to discuss further
+- Alexis: possibility of plotting several contrast maps on a surface (open an issue)
