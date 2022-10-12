@@ -1,0 +1,33 @@
+General points
+--------------
+
+- CZI position
+    - Already had one interview
+    - Start sending out posting through various channels this week
+        - See draft: overleaf.com/3674263154gyndmhhjpngh
+- Issues with Neurostars platform
+    - We don't have a template. This is a feature supported by Discourse, but not actually used in Neurostars.
+    - Can't monitor posts. Neurostars doesn't have any admins moderating posts (e.g., asking folks to open a new topic when their topic has meandered away from the original question).
+    - There will be costs to switching platforms, so will focus on improving Neurostars first.
+    - ACTION ITEM: Will reach out to INCF about our concerns and requests
+- Office hours format
+    - Adding a monthly meeting for Asia Pacific time zone
+        - Send email to figure out a date and time
+        - Do more extensive advertising beforehand
+    - Having an agenda - limit to one item for discussion
+    - Renaming "office hours" to "drop-in hours"?
+        - https://twitter.com/LaurenSHallion/status/1562474858759327746?s=20&t=L8Y6hGjOgVfRpN5QvOC3mA
+        - Revisit after having a break from the office hours
+- Milestones for 0.10.0 release
+    - https://github.com/nilearn/nilearn/milestone/21
+
+Open Issues and PRs
+-------------------
+
+- `CI service discussion #3239 <https://github.com/nilearn/nilearn/issues/3239>`_
+    - Decision to migrate CI to github actions
+- `Some tests fail in test_nilearn_standardize on aarch64 and ppc64le #3363 <https://github.com/nilearn/nilearn/issues/3363>`_ (particularly if we want to support testing other architectures)
+    - Decision: Improve test for failure in issue; For now don't add support for other architectures
+- `Reorganizing the User Guide #3379 <https://github.com/nilearn/nilearn/issues/3379>`_
+    - Focus on changes in macroscale
+- `Latex error for rendering equations #3381 <https://github.com/nilearn/nilearn/issues/3381>`_
