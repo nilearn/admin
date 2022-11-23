@@ -1,0 +1,41 @@
+General points
+--------------
+
+- Core dev meeting time
+    - Keeping at the current time
+    - Please let Yasmin know if you can't make it ; will reschedule if not enough people can attend a given call
+- Meeting with Kshitij Chawla about automatic formatting
+    - See https://github.com/nilearn/nilearn/issues/2528
+    - Current plan is that Kshitij will implement it in a PR and then assess relative impact
+- Discussion with Jérôme about surface data support
+    - See proposal: https://github.com/nilearn/nilearn_sandbox/tree/master/discussions/surface_api_office_hours_2022-10-14
+    - Everyone take a look at the proposal and give feedback before moving forward
+    - Jérôme will make updates to integrate notes from last office hours discussion
+    - After everyone agrees with the plan, set up a meeting with Chris to share our proposal
+- Updates about issues/PRs for release
+    - https://github.com/nilearn/nilearn/pull/3173 could use another review
+    - https://github.com/nilearn/nilearn/issues/3171 <-- needs a PR ?
+        - Opened an issue on FreeSurfer : https://github.com/freesurfer/freesurfer/issues/1033
+    - Safe cache : https://github.com/nilearn/nilearn/pull/3375
+        - Decision to remove the function
+    - HTW needs to finish #3204 (accept index-like input for load_confounds sample mask)
+- Do release first week of December
+- Python 3.6 support
+    - Plan to extend deprecation cycle to 0.11 release
+
+Open Issues and PRs
+-------------------
+
+- CI migration - https://github.com/nilearn/nilearn/pull/3383
+    - Finished and open to being reviewed
+- User guide - https://github.com/nilearn/nilearn/issues/3379
+    - Discuss during next office hours (25/11, 2/12)
+    - Will not include as a milestone in next release
+- Performance of maskers
+    - Take first steps to better document behavior
+    - Plan an office hour discussion around this
+    - Some relevant issues:
+        - https://github.com/nilearn/nilearn/issues/3413
+        - https://github.com/nilearn/nilearn/issues/3398
+        - https://github.com/nilearn/nilearn/issues/3399
+        - https://github.com/nilearn/nilearn/issues/3177
