@@ -15,7 +15,7 @@ General points
             - https://niivue.github.io/niivue/features/alphathreshold.html
             - Currently in use in FSL docs : https://git.fmrib.ox.ac.uk/fsl
     - Suggested actions items
-        - Work with NiiVue on Python API
+        - Work with NiiVue team on Python API
         - Where can Nilearn functionality be replaced by NiiVue
     - Could start it as a satellite project that can be later merged
     - Start with generating examples with what NiiVue can do that's not possible in Nilearn
