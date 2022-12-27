@@ -21,9 +21,9 @@ General points
     - Start with generating examples with what NiiVue can do that's not possible in Nilearn
     - NiiVue API: https://niivue.github.io/niivue/devdocs/Niivue.html
 
-**Not discussed because of lack of time, send email about these:**
+**Not discussed because of lack of time:**
 
-- Release schedule
-- Office hours
+- Release schedule [Send email]
+- Office hours [–> Move to next month]
     - Suggestion to change name to "drop-in hour"
     - Change day?
