@@ -3,7 +3,7 @@ General points
 
 - NiiVue discussion
     - https://niivue.github.io/niivue/
-    - review of the points raised at the niivue project
+    - review of the points raised at a previous niivue meeting
         - introduction to niivue
         - python API for niivue so that it can be used with nilearn
             - nilearn need to script visualization
