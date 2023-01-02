@@ -1,0 +1,29 @@
+General points
+--------------
+
+- NiiVue discussion
+    - https://niivue.github.io/niivue/
+    - review of the points raised at a previous niivue meeting
+        - introduction to niivue
+        - python API for niivue so that it can be used with nilearn
+            - nilearn need to script visualization
+            - callbacks (need for a niivue server?)
+    - next steps
+        - show some examples with niivue
+            - ipyniivue : https://github.com/niivue/ipyniivue
+                - eliz finds this is slow on binder ? is it a memory requirement ?
+            - https://niivue.github.io/niivue/features/alphathreshold.html
+            - Currently in use in FSL docs : https://git.fmrib.ox.ac.uk/fsl
+    - Suggested actions items
+        - Work with NiiVue team on Python API
+        - Where can Nilearn functionality be replaced by NiiVue
+    - Could start it as a satellite project that can be later merged
+    - Start with generating examples with what NiiVue can do that's not possible in Nilearn
+    - NiiVue API: https://niivue.github.io/niivue/devdocs/Niivue.html
+
+**Not discussed because of lack of time:**
+
+- Release schedule [Send email]
+- Office hours [–> Move to next month]
+    - Suggestion to change name to "drop-in hour"
+    - Change day?
