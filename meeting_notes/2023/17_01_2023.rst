@@ -1,0 +1,26 @@
+General points
+--------------
+
+- Mastodon account created
+    - ACTION ITEM: Add tagged introduction post.
+    - TS: Link to account? https://fosstodon.org/@nilearn
+- Niivue/ipyniivue update
+    - JD: Jupyter widgets (ipyniivue) shouldn't be first step, and maybe should stay separate from nilearn.
+        - Embedding images in static pages (e.g., in examples) should be focus.
+- Surface data support meeting with Chris
+    - TS: Does this include CIFTI?
+        - HTW: CIFTI isn't commonly used
+        - JD: Out of scope for nilearn
+    - Discuss proposal: https://github.com/nilearn/nilearn_sandbox/tree/master/discussions/surface_api_office_hours_2022-10-14
+    - Discuss also nibabel's plans for surface data
+- Nilearn projects for 2 students from JB's lab
+    - Improving maskers
+    - Improving decoding
+
+Open Issues and PRs
+-------------------
+
+- `Background maps <https://github.com/nilearn/nilearn/pull/3173>`_
+    - Alexis needs to push some updates
+- `Flat maps <https://github.com/nilearn/nilearn/pull/3444>`_
+    - Can be reviewed after merging #3173
