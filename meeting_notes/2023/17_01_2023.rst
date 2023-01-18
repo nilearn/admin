@@ -7,7 +7,7 @@ General points
 - Niivue/ipyniivue update
     - JD: Jupyter widgets (ipyniivue) shouldn't be first step, and maybe should stay separate from nilearn.
         - Embedding images in static pages (e.g., in examples) should be focus.
-- Surface data support meeting with Chris
+- Surface data support meeting with Chris (January 25 during drop-in hour)
     - TS: Does this include CIFTI?
         - HTW: CIFTI isn't commonly used
         - JD: Out of scope for nilearn
