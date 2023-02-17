@@ -1,0 +1,34 @@
+General points
+--------------
+
+- How would folks feel about a 0.10.1rc1 release soon?
+    - Alternatively, has anyone considered using a tool like `auto <https://github.com/intuit/auto>`_? I (TS) think it would be useful to make patch releases whenever a bug is fixed.
+    - JD: There are good reasons to release fairly infrequently, so we don't want to make frequent patch releases.
+    - We could have frequent pre-releases instead, so regular users won't deal with a lot of versions, but folks who need a specific bug-fix can pin to a release candidate.
+    - Aim for once a month pre-releases, keeping current cadence of one non-pre-release every ~6mo
+- Reformatting codebase with black
+    - Line length (current is flake8 default of 79)
+        - Readability might not improve even with longer line length
+        - Not many lines' readability is affected
+        - Keep as is
+    - Where to put parameter default value in docstrings (See `comment <https://github.com/nilearn/nilearn/pull/3491#issuecomment-1427666952>`_)
+        - We need to ask Remi how the type annotation extraction tool (if there is one) would work.
+        - Including the default value in the type description portion of the argument's docstring is numpydoc style, so this is probably a change we want to make even if we don't adopt type hinting.
+    - Other?
+- NiiVue progress
+    - At the point that we can succesfully use niivue methods to load base64 encoded data and view in browser using html embedding
+- Replacing `setup.py` and `setup.cfg` with `pyproject.toml`
+    - https://effigies.gitlab.io/posts/python-packaging-2023/
+    - http://ivory.idyll.org/blog/2021-transition-to-pyproject.toml-example.html
+    - Jerome will configure `pyproject.toml` based on what Chris did and test it on testpypi
+
+Open Issues and PRs
+-------------------
+
+- `Coordinate Image API <https://github.com/nilearn/nilearn/pull/3473>`_
+    - Ping Chris to see where he is in terms of finishing the PR
+    - Bertrand: idea to set up a hackathon to use the API
+- `Renaming plot_epi function <https://github.com/nilearn/nilearn/issues/3388>`_
+    - Suggest to close; no strong reason to change it
+- `Non-aggressive denoising <https://github.com/nilearn/nilearn/issues/3497>`_
+    - Perhaps add option to orthogonalize the noise ICA regressors w.r.t. the signal ICA regressors within `load_confounds`.
