@@ -1,0 +1,35 @@
+General points
+--------------
+
+- Make decision about default parameters
+    - See discussion in `#3519 <https://github.com/nilearn/nilearn/issues/3519>`_.
+        - Add them to the doc string, along with the type but not at the end of the doc string.
+- Adding type annotations to Nilearn `#3568 <https://github.com/nilearn/nilearn/issues/3568>`_.
+    - See also `mypy PR #3569 <https://github.com/nilearn/nilearn/pull/3569>`_.
+        - finish with reformatting before adding type annotations to the whole codebase
+        - maybe not type the whole codebase
+        - Revisit in a few months
+- Refactoring unit tests
+    - Discuss guidelines, see `comment <https://github.com/nilearn/nilearn/pull/3572#issuecomment-1458028646>`_.
+        - add doc strings to help give an overview of what / why / how things are tested
+        - can be done iteratively
+        - make sure new tests have explanation
+    - Refactoring `nilearn._utils.data_gen`, see `comment <https://github.com/nilearn/nilearn/pull/3572#issuecomment-1468620089>`_.
+        - if the data gen is just used just for one module, keep it in that module
+        - otherwise if the scope is bigger move it to  `nilearn._utils.data_gen`
+- Updates about moving to `pyproject.toml`
+    - Check in with Jerome when he's available.
+    - Ask Chris why nibabel still has a requirements.txt file.
+- Pre-release schedule
+    - Consider `comment <https://github.com/nilearn/nilearn/pull/3520#pullrequestreview-1315351292>`_.
+    - NG: Proper semantic versioning would involve pushing enhancements/new features to a branch for the next minor release, and pushing bug fixes to a branch for maintaining the current minor release series. Each bug fix would result in a new patch release, and bug fixes would need to be ported to the next minor release's branch as well.
+    - EMD: What about CalVer?
+    - See also MNE-python
+    - Rediscuss next meeting
+- Alternatives to Discord for drop-in hours
+    - Common for at least one person to have issues
+    - Move to jitse but keep maintaining Discord for use in other events
+- Asia Pacific drop-in hour didn't work
+    - Try again?
+    - More advertising: other channels than just twitter/mastodon
+    - Set a date and then email coredevs to help spread the word
