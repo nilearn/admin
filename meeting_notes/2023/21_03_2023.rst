@@ -30,6 +30,6 @@ General points
     - Common for at least one person to have issues
     - Move to jitsi but keep maintaining Discord for use in other events
 - Asia Pacific drop-in hour didn't work
-    - Try again?
+    - Try again
     - More advertising: other channels than just twitter/mastodon
     - Set a date and then email coredevs to help spread the word
