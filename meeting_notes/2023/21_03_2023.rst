@@ -28,7 +28,7 @@ General points
     - Rediscuss next meeting
 - Alternatives to Discord for drop-in hours
     - Common for at least one person to have issues
-    - Move to jitse but keep maintaining Discord for use in other events
+    - Move to jitsi but keep maintaining Discord for use in other events
 - Asia Pacific drop-in hour didn't work
     - Try again?
     - More advertising: other channels than just twitter/mastodon
