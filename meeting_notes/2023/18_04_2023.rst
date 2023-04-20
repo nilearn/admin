@@ -1,0 +1,49 @@
+General points
+--------------
+
+- Discuss BIDS scope in nilearn [**Move to next meeting**]
+    - Rémi: maybe better postpone the discussion when Elizabeth is here?
+    - `Related issue <https://github.com/nilearn/nilearn/issues/3567)>`_
+    - Keep an eye out for PyBIDS possibly merging ANCP-BIDS into codebase
+- Organising a sprint / dev days
+    - try to tag it along another community event (OHBM hackaton, a specific brainhack)
+    - Contact this year: Anibal (anibalsolon@gmail.com); Hao-Ting make the request
+    - Topic idea: Go through the user guide to spot things to be improved
+- Minor release for end of April
+- Release process - standard practice or stick to monthly prerelease?
+    - If standard:
+        - Given the way we version, would lead to more patch ("minor") releases for bugfixes
+        - 1 major release per year will be much bigger in terms of changes
+            - Can do 2 instead
+            - And use prereleases for their intended purpose
+    - Decision to stick to previous way of making releases (**no monthly prereleases**)
+    - Going standard is much more work with handling several branches
+- Put some effort on Surface handling https://github.com/nilearn/nilearn/pull/3473
+    - Plan another drop-in hour with Chris (Yasmin will email)
+    - Can also discuss amongst ourselves during one of the drop-in hours
+- Formatting/refactoring related:
+    - Misunderstanding about default parameters decision: https://github.com/nilearn/nilearn/pull/3621
+        - Stick to decision of moving default values to the type definition of parameters
+    - `__init__.py` in test suite: https://github.com/nilearn/nilearn/issues/3660
+        - change name of issue to "using a source layout"
+        - re-add __init__.py that were deleted
+    - Private function naming https://github.com/nilearn/nilearn/issues/3628
+        - if a function starts with "\_" it is private to that module
+- LabelsMasker https://github.com/nilearn/nilearn/issues/3085
+    - Go with first option of deprecating old behavior (needs 2 separate deprecation cycles)
+- NiiVue update
+    - Some surface plotting functionality can already make use of niivue engine
+    - We can focus on surface plotting first and keep brainsprite for volumetric data
+    - Look into how to save PNG of a view
+    - NiiVue is not as well tested as plotly and the documentation can be improved
+    - Plotly uses up a lot of memory and has some rendering issues
+    - See issue `#3451 <https://github.com/nilearn/nilearn/issues/3451>`_ for prototypes for integration into nilearn
+
+Questions
+---------
+
+- ever had the need for an interface to "query" SPM.mat files?
+  - get design matrix, file name for beta image for a condition...
+- nilearn monthly stats on neurostars
+    - collected via the discourse API with this script: https://github.com/bids-standard/maintenance-tools/blob/main/neurostars.py
+    - Add script to nilearn/nilearn_sandbox
