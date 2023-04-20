@@ -37,7 +37,7 @@ General points
     - Look into how to save PNG of a view
     - NiiVue is not as well tested as plotly and the documentation can be improved
     - Plotly uses up a lot of memory and has some rendering issues
-    - See issue [#3451](https://github.com/nilearn/nilearn/issues/3451) for prototypes for integration into nilearn
+    - See issue `#3451 <https://github.com/nilearn/nilearn/issues/3451>`_ for prototypes for integration into nilearn
 
 Questions
 ---------
