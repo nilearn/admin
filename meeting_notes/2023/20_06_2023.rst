@@ -1,0 +1,49 @@
+General points
+--------------
+
+- Nilearn at OHBM
+    - OHBM brainhack - https://hackmd.io/5gwxDYHiQ_iNCT3klzqp7g
+        - Back up projects for first timer
+        - Filter first timer issues and prioritise surface
+        - Invite Mohammad and Michelle to the next office hour (28 June) to discuss the scope of tasks
+    - Poster
+        - Yasmin working on this and will circulate for feedback
+- Surface API planning
+    - What needs to be done to merge https://github.com/nilearn/nilearn/pull/3473/ ?
+        - Reference: https://nipy.org/nibabel/devel/biaps/biap_0009.html
+        - Focus on Gifti support rather than coordiante image as we don't need
+    - Project board: https://github.com/orgs/nilearn/projects/4/views/1
+    - "roadmap": https://github.com/nilearn/nilearn_sandbox/blob/master/discussion/surface_api_office_hours_2022-10-14/surfaces_draft.md
+    - Yasmin will work on the surface loader
+        - Leave CoordinateImage API for now but try to stay consistent
+- ancp-bids / PyBIDS proposal https://github.com/bids-standard/pybids/issues/989
+  - improve documentation on what our current BIDS handling functions do and do not do
+  - not necessarily urgent; we have "stop-gap" code that we have been using for a couple of years
+  - long term goal is to delegate BIDS handling to an external library
+  - feed back on RFC what exactly we're using in the library right now
+
+- internal communication:
+    - "core devs" channel on our discord server
+    - make all core devs admin of the server
+- fixed date for yearly major release: January - **Discuss again next meeting**
+  - goal:
+    - help us plan / organize
+    - help users when to expect new features / deprecations
+      (deprecation warnings send to a "roadmap" page)
+  - future releases
+    - 0.11: Jan 2024
+      - drop python 3.7
+      - enhanced surface support
+    - 0.12: Jan 2025
+    - 0.13: Jan 2026
+  - previous releases
+    - 0.10: Jan 2023
+    - 0.9: Jan 2022
+    - 0.8: Jun 2021
+    - 0.7: Nov 2020
+    - 0.6: Dec 2019
+    - 0.5: Nov 2018
+    - 0.4: Nov 2017
+    - 0.3. Nov 2017
+    - 0.2: Dec 2015
+    - 0.1: Feb 2015
