@@ -1,0 +1,20 @@
+General points
+--------------
+
+- Surface API PR https://github.com/nilearn/nilearn/pull/3856
+    - Review comments
+        - PR almost ready to merge
+            - Add warnings
+            - Try to increase maskers tests if it makes sense
+            - Deal with flake8
+    - Consider adding limited cifti case (see fitlins) - nothing prevents from future integration of cifti
+        - User should know space data is in (don't deal with wbspec)
+        - CIFTI_MODEL_TYPE_SURFACE
+        - CIFTI_STRUCTURE_CORTEX_LEFT/CIFTI_STRUCTURE_CORTEX_RIGHT
+        - dscalar.nii, dtseries.nii?
+    - Merge PR before next minor release with copious amount of warning to let users know about the experimental nature of this feature and API
+    - Jerome to open an an issue listing the follow-up steps after the merge
+- TODO before minor release end of September
+    - https://github.com/nilearn/nilearn/milestone/25
+    - Finish PR for order of contributors (consortium authorship + alphabetical order)
+    - Then do Zenodo release
