@@ -1,0 +1,56 @@
+General points
+--------------
+
+- DOI
+    - Include Zenodo ROI in Readme
+    - Also reference for OHBM poster
+    - Which reference for nilearn
+        - one for releases represents all contributors
+    - https://github.com/nilearn/nilearn/pull/4032
+    - **DECISION**: use the zenodo DOI as the main one.
+- Major release
+    - start adding type hints: 
+        - https://github.com/nilearn/nilearn/issues/3568
+        - https://github.com/nilearn/nilearn/pull/3569
+        - Handling typing for docstrings (see #4049 linked below)
+        - **DECISION**: let's wait a bit 
+    - when do we drop 3.8?
+        - Currently planned for release 0.12 (dep warning)
+        - EOL (Oct 2024)
+        - **DECISION**: drop warning about python version completely
+- OHBM abstract
+    - Nov 17th
+    - draft: https://docs.google.com/document/d/1BuuZMEm0wM2v-ZgKr-8RtAyKS0WINltOA4DC3oZYjM8/edit
+    - Send to all contributors for feedback
+- Review policy: need 2 approvals for merge
+    - **DECISION**: make the policy explicit by requiring 2 approvals on github (no reapproval required, admin can override).
+- Think about planning another sprint for reworking the user guide
+    - https://github.com/nilearn/nilearn/issues/3379
+    - Try to set up before spring
+
+Open Issues and PRs
+-------------------
+
+- Surface
+    - **DECISION**: sprint on the 24th of November to make progress
+        - Yasmin sends an invite
+    - https://github.com/nilearn/nilearn/issues/4027
+    - https://github.com/nilearn/nilearn/pull/4049
+        - issue https://github.com/nilearn/nilearn/issues/4018
+    - *Side note*: plan a sprint in the spring
+- Atlas proposals
+    - **DECISION**: 
+        - make it more obvious in the doc and easier to link to
+        - mention it in the auto reply to PRs (or issues)
+        - point users to other "imperfect" solutions
+    - https://github.com/nilearn/nilearn/issues/4039
+    - https://github.com/nilearn/nilearn/issues/4074
+    - See also older similar issues:
+        - https://github.com/nilearn/nilearn/issues/1167 
+        - https://github.com/nilearn/nilearn/issues/2273
+        - doc needed: https://github.com/nilearn/nilearn/issues/3075
+        - general fetcher: https://github.com/nilearn/nilearn/issues/3086
+        - deprecate fetchers: https://github.com/nilearn/nilearn/issues/3086
+- Default values
+    - https://github.com/nilearn/nilearn/pull/4040#discussion_r1350250330
+    - **DECISION**: default in "type" section of the docstring should match what appears in the function definition. If `None` is passed and another value is set in its place then it should be described in the "description" of the docstring.
