@@ -1,0 +1,14 @@
+General points
+--------------
+
+- OHBM abstract review
+    - Delayed deadline Dec 1st
+    - https://docs.google.com/document/d/1BuuZMEm0wM2v-ZgKr-8RtAyKS0WINltOA4DC3oZYjM8/edit
+    - The abstract looks mostly good. Could be improved by adding a second figure. Maybe a flatmap ?
+- Surface API sprint (Nov 24, 14h - 17h UTC)
+    - Location in Paris: Inria Paris la salle Georg Cantor (batiment C)
+        - Can announce on twitter/mastodon
+    - Online: discord or jitsi? -> Discord is preferred
+    - Existing issue : https://github.com/nilearn/nilearn/issues/4027
+        - Gdoc for editting : https://docs.google.com/document/d/1Hj5Gnk1kreTZ2vZixP_wVMnCZhvXadwfFN02KFvoNoQ/edit?usp=sharing
+        - Have GLMs and Decoders to work seamlessly with SurfaceImage of NiftiImage
