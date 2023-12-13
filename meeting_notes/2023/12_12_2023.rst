@@ -32,7 +32,7 @@ Open issues and PRs
     - https://github.com/nilearn/nilearn/issues/3807 and https://github.com/nilearn/nilearn/issues/4140 and PR https://github.com/nilearn/nilearn/pull/4150 (need reviews)
         - Decide if we want to support or not
     - https://github.com/nilearn/nilearn/issues/4087 and PR https://github.com/nilearn/nilearn/pull/4116 (need help)
-        - Hai-Ting will review
+        - Hao-Ting will review
 
 CZI EOSSS 2022 - GLM
 --------------------
