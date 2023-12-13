@@ -1,0 +1,60 @@
+General points
+--------------
+
+- Release milestones
+    - https://github.com/nilearn/nilearn/milestone/24
+    - surface code out of experimental, so that using glm does not trigger the issue
+    - taking Surface out of experimental
+        - no feedback on it but we did not have any explicit "useful" feature
+        - wait for more feedback and feature until we are confident ?
+        - or merge "soon" (before the release) the GLM surface PR and take the new Surface feature out of experimental ?
+        - few people use surface for GLM so we may not get a lot of "signal" from them
+        - DECISION: do not take a decision today but let's take a decision soon (before Xmas)
+
+
+- Update on surface API
+    - https://github.com/nilearn/nilearn/issues/4027
+    - https://github.com/nilearn/nilearn/pull/4126 (need review)
+    - What else is needed?
+        - examples?
+        - visualizations?
+            - Forcing 'left' and 'right' keys
+    - Comments on Chris M. comments
+
+
+> I would be interested in your takes on https://github.com/nipy/nibabel/pull/1257. Since last I posted, the Pointset base class was merged, but TriangularMeshes having two arrays and possibly a family of associated coordinates feels a bit trickier to get right. With your experiences with your own structures, I want to know if the proposed class looks like it would be easy/difficult to work with, or what tests you'd want to see to make that determination.
+
+
+Open issues and PRs
+-------------------
+
+- Bugs
+    - https://github.com/nilearn/nilearn/issues/3807 and https://github.com/nilearn/nilearn/issues/4140 and PR https://github.com/nilearn/nilearn/pull/4150 (need reviews)
+        - Decide if we want to support or not
+    - https://github.com/nilearn/nilearn/issues/4087 and PR https://github.com/nilearn/nilearn/pull/4116 (need help)
+        - Hao-Ting will review
+
+CZI EOSSS 2022 - GLM
+--------------------
+
+Kanban board of TODOs from the CZI EOSSS grant
+
+https://github.com/orgs/nilearn/projects/11/views/2?pane=issue&itemId=46168608
+
+
+Relating to GLM performance:
+============================
+
+- one bottleneck seems to be the masking step
+    - better benchmark / profiling could help
+    - https://github.com/nilearn/nilearn/issues/3398
+    - https://github.com/nilearn/nilearn/issues/3399 
+- possible optimization: pre-compute 
+- improve documentation with a page of tips regarding large scale analysis
+    - Hao-Ting and members of lab have some pointers on this
+
+
+For next meeting
+----------------
+
+Invite Nibabel dev team to join us. (Yasmin emailed)
