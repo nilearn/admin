@@ -9,7 +9,7 @@
 
 **Action:** transfer emails, make sure people who need access have login info
 
-## Cordev meeting planning
+## Coredev meeting planning
 
 - Once a month, usually on Tuesdays at 18h CET
 - Jisti link: https://meet.jit.si/nilearn-dev-team-meeting
