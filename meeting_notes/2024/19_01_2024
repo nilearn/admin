@@ -1,0 +1,62 @@
+General points
+--------------
+
+- Nibabel CoordinateImage API discussion w/ Chris
+
+    - suggestions:
+        - add "header" as a metadata dict as will be required for saving to files
+        - if Nilearn surface interface is meant in the long term be just a wrapper on Nibabel Surface class then we could limit ourselves to only track the data we need and let users access metadata once we wrap around Nibabel
+        - filename templates:
+            - .surf.gii
+            - .func.gii
+        - nibabel timeline: no specific ETA
+            - only pointset finished so far
+
+- Nilearn 0.11 release
+
+    - https://github.com/nilearn/nilearn/milestone/24
+    - Check on 26/01 if we have enough for a stable release with surface API
+    - Another option is to do a minor 0.10.3 release and follow-up with a major release in a few months when surface is ready
+
+- Admin tasks
+    - recap: https://github.com/nilearn/admin/blob/main/admin/admin_info.md
+    - Planning drop in hours (Rémi for now)
+        - Tweet office hours
+        - Reminder email sent the day before from the nilearn gmail account with a link 'who can be there' spreadsheet.
+        - Consider making better use of discord / neurostars ?
+    - Coredev meeting planning (Bertrand)
+        - Keep next one planned for Feb 13
+    - Who needs access to twitter and mastodon?
+        - transfer accounts to the nilearn gmail account
+    
+- New job: need for another round of ads?
+    - not for now
+
+##### Access to accounts on OSF
+
+See this one: https://osf.io/4r3jt/
+
+What about this nistats project that hosts some of our datasets?
+https://osf.io/v7hsw/?view_only=
+
+And this one: https://osf.io/5dr8p/?view_only=
+that mirrors this one: https://osf.io/k4jp8/ while download from that address is failing.
+
+**DECISION:**
+
+- centralize all datasets on OSF under the nilearn OSF account
+- make sure that that all devs have access to the projects
+- update admin info for future on boarding
+
+##### Add BIDS dataset with more recent fmriprep ?
+
+- https://github.com/nilearn/nilearn/pull/4198
+- must have rest and task fMRI (ideally a task wiht event related design with several runs to decode on)
+- Hao-Ting's downsampled datasets?
+    - ds000228 (rest/movie watching, not uploaded yet)
+    - [ds000017](https://zenodo.org/records/7901637#.ZFWJ15HMI4s) (task, on zenodo) 
+- other possibility update examples we have to rename files / TSV where header where ncessary to fit our needs
+
+**DECISION:**
+
+- Rémi to open an issue for planning this
