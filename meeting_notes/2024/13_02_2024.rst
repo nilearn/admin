@@ -1,0 +1,30 @@
+General points
+--------------
+
+- Introduction of Himanshu
+    - TODO: Rémi to help with on-boarding
+
+- What actions to undertake with the wide community:
+    - coding sprint, brainhack ?
+    - Before/after OHBM ?
+    - or another conference ?
+        - brainhack in October
+        - OHBM in June in Seoul, but only few people attend ; maybe a hackathon before
+    - make it a docathon ? Reaching experts of Nilearn topics
+    - EMD : @Remi probably worth checking with @JB to make sure he didn't have any events planned to use that CZI allocation for events ; I think that resets in June 
+
+
+- Bug fix release at the end of the month?
+  - **Needs review:** https://github.com/nilearn/nilearn/pull/4256 
+  - **Relates to:** https://github.com/neurostuff/NiMARE/actions/runs/7749170814/job/21133189716
+  - (Tangentially-related issue: https://github.com/neurostuff/NiMARE/issues/872)
+
+- Technical discussions
+    - surface module:
+        - meta-issue: [4027](https://github.com/nilearn/nilearn/issues/4027)
+          - [plotting and design choices: 4235](https://github.com/nilearn/nilearn/pull/4235): Blocker
+          - Implement GLM report: Blocked by 4235; Blocker for 4126
+          - [GLM: 4126](https://github.com/nilearn/nilearn/pull/4126)
+          - [decoding: 4205](https://github.com/nilearn/nilearn/pull/4205)
+          - [Move API: 4229](https://github.com/nilearn/nilearn/pull/4229)
+
