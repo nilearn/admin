@@ -1,0 +1,48 @@
+### Agenda
+
+### Meeting with niivue
+
+- Chris Rorden 
+
+- link to slides : https://docs.google.com/presentation/d/1pWVk53cofExuT4mF1qffaZflIu3kP5pIkfd_hxRaG5o/edit?usp=sharing
+
+Related issues / PR:
+
+- https://github.com/nilearn/nilearn/issues/3451
+- https://github.com/nilearn/nilearn/pull/3729
+- https://github.com/nilearn/nilearn/pull/4235
+
+---
+
+- Assumptions on file formats?
+
+  - https://github.com/niivue/niivue?tab=readme-ov-file#supported-formats
+  - try to support format used by for most of the big tools 
+  - connectome is the only format where new formats have had to be created
+
+- work to be done on the niivue front to polish python even more to make it easier for nilearn users (but also the python community as a whole).
+
+- next steps:
+  - support directly for the new nilearn object for surfaces?
+  - integrate niivue engine first and then expand to the new nilearn objects?
+
+- Passing objects to niivue should probably be done by at least an intermediate step where objects are "saved on disk". Would help decouple our surface object representation from the their plotting.
+
+- JS API is fairly stable as it is used by several big tools who want to keep the API stable.
+
+- ACTION: plan a meeting to go through [#3729](https://github.com/nilearn/nilearn/pull/3729) with Alexis, Himanshu, Remi and people from the niivue team to improve python interface API.
+
+#### 0.10.4 release
+
+Bug fix release "only".
+Was supposed to be for a couple of bugs due to 0.10.3, but has been delayed from end of February because new bug reports have been coming in (not all from 0.10.3).
+
+-  0.10.4 Release at the end of the month (for sure this time)
+
+- fix CI errors for numpy2 compatibility and other workflows that fail
+  - https://github.com/nilearn/nilearn/issues/4309
+  - https://github.com/numpy/numpy/issues/24300
+
+- Need to bring back in dev meetings:
+  - issue prioritizing 
+
