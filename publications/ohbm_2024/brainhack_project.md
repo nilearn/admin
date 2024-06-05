@@ -37,7 +37,6 @@ https://nilearn.github.io/stable/_static/nilearn-transparent.png
 # Project lead
 (Your name and GitHub login AND Discord login (we will be using Discord during the hackathon, please be sure to register [here](https://discord.gg/yK8jakPfnG)). Add multiple leaders if you can, if leaders cover different hubs, please add this next to the name.)
 ```txt
-# TODO: Elizabeth DuPre (?)
 Himanshu Aggarwal, Github: @man-shu, Discord: man_shooo
 ```
 
