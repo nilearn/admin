@@ -52,7 +52,6 @@ Seoul
 # Link to the Project pitch
 (not required, but highly recommended) If your project involves hybrid/online participation, create a brief project pitch (2-5 minutes) for the Brainhack audience. See [more](https://github.com/ohbm/hackathon2024/blob/main/.github/ISSUE_TEMPLATE/handbooks/projects.md#pitch-video) for additional guidance. Upload the pitch video to YouTube and share the link with us.
 ```txt
-# TODO
 ```
 
 # Other hubs covered by the leaders
@@ -81,7 +80,11 @@ We recommend starting with [Nilearn's basic tutorials](https://nilearn.github.io
 # Good first issues
 (If you welcome new contributors, please provide a list of good-first-issues (not required, but highly recommended), check [the guide](https://github.com/ohbm/hackathon2024/blob/main/.github/ISSUE_TEMPLATE/handbooks/projects.md#good-first-issues) for suggestions)
 ```txt
-# TODO
+Depending upon your comfort level with the package, issues can be filtered as follows:
+- [Good first issues](https://github.com/nilearn/nilearn/labels/Good%20first%20issue)
+- [Effort: Low](https://github.com/nilearn/nilearn/labels/Effort%3A%20low)
+- [Effort: Medium](https://github.com/nilearn/nilearn/labels/Effort%3A%20medium)
+- [Effort: High](https://github.com/nilearn/nilearn/labels/Effort%3A%20high)
 ```
 
 # Twitter summary
