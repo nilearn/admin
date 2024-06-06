@@ -29,9 +29,7 @@ https://github.com/nilearn/nilearn
 # Image/Logo for the OHBM brainhack website
 (Please provide a link only. Please provide the RAW content of the file if you use an image from a GitHub repo. We kindly request that the image be provided in a square format, ensuring equal width and height for a polished visual appearance.)
 ```txt
-# TODO: Do we have an SVG logo?
-
-https://nilearn.github.io/stable/_static/nilearn-transparent.png
+https://drive.google.com/file/d/1vgv_osZHtleHkGLztaSN-1SicwUhNBMQ/view?usp=sharing
 ```
 
 # Project lead
