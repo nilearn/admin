@@ -7,7 +7,7 @@ Combined from previous years:
 # Title
 (Name of your awesome project. Please also update the title of the issue to be the title of your project)
 ```txt
-Nilearn: Statistics for Neuroimaging in Python
+Nilearn: Statistics and Machine Learning for Neuroimaging in Python
 ```
 
 # Short description and the goals for the OHBM BrainHack
