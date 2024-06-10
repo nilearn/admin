@@ -17,7 +17,7 @@ Nilearn is an open-source Python package for fast and easy analysis and visualiz
 
 Recent work in Nilearn has been centered on developing a new API to allow users to seamlessly work with surface data in a manner similar to volumetric data, enhancing support for the General Linear Model (GLM), enhancing the BIDS interface, and improving and updating the infrastructure and codebase.
 
-We want to dedicate these Brainhack days towards direct interaction with our user-base and resolving any specific issues they might have. To this end, we encourage users to simply pop-in-and-say-hi. They are also welcome to present their queries via neurostars.org or open new issues/PRs on our GitHub repo. In addition, any interested contributors are also encouraged to work on pre-existing issues on our GitHub. New contributors should look for the "Good First Issue" label on the project board to get started.
+We want to dedicate these Brainhack days towards direct interaction with our user-base and resolving any specific issues they might have. To this end, we encourage users to simply pop-in-and-say-hi. They are also welcome to present their queries via neurostars.org or open new issues/PRs on our GitHub repo. In addition, any interested contributors are also encouraged to work on pre-existing issues on our GitHub. New contributors should look for the "Good First Issue" label to get started.
 ```
 
 # Link to the project
@@ -79,7 +79,7 @@ We recommend starting with [Nilearn's basic tutorials](https://nilearn.github.io
 # Good first issues
 (If you welcome new contributors, please provide a list of good-first-issues (not required, but highly recommended), check [the guide](https://github.com/ohbm/hackathon2024/blob/main/.github/ISSUE_TEMPLATE/handbooks/projects.md#good-first-issues) for suggestions)
 ```txt
-Here are some issues:
+Here are a few issues:
 - [Use nilearn's logger instread of print statement](https://github.com/nilearn/nilearn/issues/4443)
 - [Add scripts to collect stats for the nilearn repo](https://github.com/nilearn/nilearn/issues/3791).
 - [Update missing default value in docstrings](https://github.com/nilearn/nilearn/issues/3865)
@@ -88,7 +88,7 @@ Here are some issues:
 
 You can also find an updated list of issues for the Brainhack [here](https://github.com/nilearn/nilearn/issues?q=is:open+is:issue+label:Hackathon)
 
-Depending upon your comfort level with the package, issues can be filtered as follows:
+Depending upon your comfort level with the package, issues can also be filtered as follows:
 - [Good first issues](https://github.com/nilearn/nilearn/labels/Good%20first%20issue)
 - [Effort: Low](https://github.com/nilearn/nilearn/labels/Effort%3A%20low)
 - [Effort: Medium](https://github.com/nilearn/nilearn/labels/Effort%3A%20medium)
@@ -98,7 +98,7 @@ Depending upon your comfort level with the package, issues can be filtered as fo
 # Twitter summary
 (Twitter-size summary of your project pitch, please check [the guide](https://github.com/ohbm/hackathon2024/blob/master/.github/ISSUE_TEMPLATE/handbooks/projects.md#twitter-size-summary-of-your-project-pitch))
 ```txt
-With @nilearn, we aim to simplify statistical analysis and machine learning on brain images in Python by fostering an open and active contributing community.
+With @nilearn, we aim to simplify statistical analysis and machine learning on brain images in Python by fostering an open user-base and active contributing community.
 
 Find us @OHBM @brainhackorg in Seoul, Korea, from June 20th to 22nd 2024.
 
