@@ -61,7 +61,6 @@ Seoul
 - Hybrid (Europe / Middle East / Africa)
 - Hybrid (Americas)
 ```txt
-# TODO: Bertrand for Hybrid (Europe)?, Remi for Hybrid (Americas)?
 ```
 
 # Skills
