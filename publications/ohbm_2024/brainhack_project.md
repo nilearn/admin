@@ -98,7 +98,11 @@ Depending upon your comfort level with the package, issues can be filtered as fo
 # Twitter summary
 (Twitter-size summary of your project pitch, please check [the guide](https://github.com/ohbm/hackathon2024/blob/master/.github/ISSUE_TEMPLATE/handbooks/projects.md#twitter-size-summary-of-your-project-pitch))
 ```txt
-With Nilearn, we aim to simplify statistical analysis and machine learning on brain images in Python by fostering an open and active contributing community. We hope you will join us! https://nilearn.github.io/stable/index.html
+With @nilearn, we aim to simplify statistical analysis and machine learning on brain images in Python by fostering an open and active contributing community.
+
+Find us @OHBM @brainhackorg in Seoul, Korea, from June 20th to 22nd 2024.
+
+https://nilearn.github.io/stable/index.html
 ```
 
 # Short name for the Discord chat channel (~15 chars)
