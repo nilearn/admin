@@ -17,7 +17,7 @@ Nilearn is an open-source Python package for fast and easy analysis and visualiz
 
 Recent work in Nilearn has been centered on developing a new API to allow users to seamlessly work with surface data in a manner similar to volumetric data, enhancing support for the General Linear Model (GLM), enhancing the BIDS interface, and improving and updating the infrastructure and codebase.
 
-We want to dedicate these Brainhack days towards direct interaction with our user-base and resolving any specific issues they might have. To this end, we encourage users to simply pop-in-and-say-hi. They are also welcome to present their queries via neurostars.org or open new issues/PRs on our GitHub repo. In addition, any interested contributors are also encouraged to work on issues on our GitHub. New contributors should look for the "Good First Issue" label on the project board to get started.
+We want to dedicate these Brainhack days towards direct interaction with our user-base and resolving any specific issues they might have. To this end, we encourage users to simply pop-in-and-say-hi. They are also welcome to present their queries via neurostars.org or open new issues/PRs on our GitHub repo. In addition, any interested contributors are also encouraged to work on pre-existing issues on our GitHub. New contributors should look for the "Good First Issue" label on the project board to get started.
 ```
 
 # Link to the project
