@@ -66,7 +66,7 @@ Seoul
 # Skills
 (Please provide skills you expect contributors to have, so others can have better ideas if they can join. You can include non-technical skills, or simply write None, check [the guide](https://github.com/ohbm/hackathon2024/blob/main/.github/ISSUE_TEMPLATE/handbooks/projects.md#onboarding-skills) for more suggestions.)
 ```txt
-We welcome all contributions from various skill sets and levels. This can include opening discussions around improvements to the [documentation](https://nilearn.github.io/stable/index.html) and/or [code base](https://github.com/nilearn/nilearn
+We welcome all users and contributions from various skill sets and levels. This can include opening discussions around improvements to the [documentation](https://nilearn.github.io/stable/index.html) and/or [code base](https://github.com/nilearn/nilearn
 ), answering or commenting on questions or [issues raised on github](https://github.com/nilearn/nilearn/issues/4434) and [neurostars](https://neurostars.org/tag/nilearn), reviewing [pull requests](https://github.com/nilearn/nilearn/pulls), and [contributing code](https://nilearn.github.io/stable/development.html#how-to-contribute-to-nilearn).
 ```
 
@@ -79,6 +79,15 @@ We recommend starting with [Nilearn's basic tutorials](https://nilearn.github.io
 # Good first issues
 (If you welcome new contributors, please provide a list of good-first-issues (not required, but highly recommended), check [the guide](https://github.com/ohbm/hackathon2024/blob/main/.github/ISSUE_TEMPLATE/handbooks/projects.md#good-first-issues) for suggestions)
 ```txt
+Here are some issues:
+- [Use nilearn's logger instread of print statement](https://github.com/nilearn/nilearn/issues/4443)
+- [Add scripts to collect stats for the nilearn repo](https://github.com/nilearn/nilearn/issues/3791).
+- [Update missing default value in docstrings](https://github.com/nilearn/nilearn/issues/3865)
+- [Write tests](https://github.com/nilearn/nilearn/issues/2750)
+- [Add jupyterlite links to example gallery notebooks](https://github.com/nilearn/nilearn/issues/3951)
+
+You can also find an updated list of issues for the Brainhack [here](https://github.com/nilearn/nilearn/issues?q=is:open+is:issue+label:Hackathon)
+
 Depending upon your comfort level with the package, issues can be filtered as follows:
 - [Good first issues](https://github.com/nilearn/nilearn/labels/Good%20first%20issue)
 - [Effort: Low](https://github.com/nilearn/nilearn/labels/Effort%3A%20low)
