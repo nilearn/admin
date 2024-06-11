@@ -83,7 +83,7 @@ Here are a few issues:
 - [Use nilearn's logger instead of print statement](https://github.com/nilearn/nilearn/issues/4443)
 - [Add scripts to collect stats for the nilearn repo](https://github.com/nilearn/nilearn/issues/3791).
 - [Update missing default value in docstrings](https://github.com/nilearn/nilearn/issues/3865)
-- [Write tests](https://github.com/nilearn/nilearn/issues/2750)
+- [Write tests for existing functions](https://github.com/nilearn/nilearn/issues/2750)
 - [Add jupyterlite links to example gallery notebooks](https://github.com/nilearn/nilearn/issues/3951)
 
 You can also find an updated list of issues for the Brainhack [here](https://github.com/nilearn/nilearn/issues?q=is:open+is:issue+label:Hackathon)
