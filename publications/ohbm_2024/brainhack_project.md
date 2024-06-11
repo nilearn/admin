@@ -80,7 +80,7 @@ We recommend starting with [Nilearn's basic tutorials](https://nilearn.github.io
 (If you welcome new contributors, please provide a list of good-first-issues (not required, but highly recommended), check [the guide](https://github.com/ohbm/hackathon2024/blob/main/.github/ISSUE_TEMPLATE/handbooks/projects.md#good-first-issues) for suggestions)
 ```txt
 Here are a few issues:
-- [Use nilearn's logger instread of print statement](https://github.com/nilearn/nilearn/issues/4443)
+- [Use nilearn's logger instead of print statement](https://github.com/nilearn/nilearn/issues/4443)
 - [Add scripts to collect stats for the nilearn repo](https://github.com/nilearn/nilearn/issues/3791).
 - [Update missing default value in docstrings](https://github.com/nilearn/nilearn/issues/3865)
 - [Write tests](https://github.com/nilearn/nilearn/issues/2750)
