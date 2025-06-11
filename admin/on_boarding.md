@@ -37,6 +37,10 @@ about it.
     have a lot of users/contributors coming to ask questions, but we can use it
     as a weekly meeting to discuss ongoing issues/PRs.
   - Shortened url for tweeting: https://tinyurl.com/nilearn-drop-in-hour
+ 
+- Give write acces to public calendar: https://calendar.google.com/calendar/embed?src=87f409f6c8543a93a45d4c136e011abe6bcf78adfc1bbf665fc3bd2f8bb0f5ba%40group.calendar.google.com&ctz=Europe%2FParis
+
+- Give access to private calendar: https://calendar.google.com/calendar/embed?src=945ae93030a36f912a00a67b1d752141a3dc50cc05b6de46bc2af3ab66a081d5%40group.calendar.google.com&ctz=Europe%2FParis 
 
 ## Adding new developpers to the "doc"
 
