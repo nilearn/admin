@@ -97,7 +97,7 @@ We recommend starting with [Nilearn's basic tutorials](https://nilearn.github.io
 (If you welcome new contributors, please provide a list of good-first-issues (not required, but highly recommended), check [the guide](https://github.com/ohbm/hackathon2024/blob/main/.github/ISSUE_TEMPLATE/handbooks/projects.md#good-first-issues) for suggestions)
 
 ```txt
-We have a Good first issues label and the list of issues can be found [here](https://github.com/nilearn/nilearn/labels/Good%20first%20issue)
+We have a "Good first issues" label and the list of issues can be found [here](https://github.com/nilearn/nilearn/labels/Good%20first%20issue)
 
 Depending upon your comfort level with the package, issues can also be filtered as follows:
 - [Effort: Low](https://github.com/nilearn/nilearn/labels/Effort%3A%20low)
