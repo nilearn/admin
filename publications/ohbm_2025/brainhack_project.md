@@ -110,7 +110,9 @@ Depending upon your comfort level with the package, issues can also be filtered 
 (Twitter-size summary of your project pitch, please check [the guide](https://github.com/ohbm/hackathon2024/blob/master/.github/ISSUE_TEMPLATE/handbooks/projects.md#twitter-size-summary-of-your-project-pitch))
 
 ```txt
-This year at #OHBM_Brainhack_2025 in Brisbane, Australia, @nilearn wants to improve the plotting module of Nilearn by resolving existing issues, welcoming new ones, and improving the documentation. Join us in our efforts from June 21th to 23rd 2025.
+(We're not on Twitter anymore, we if you post on Bluesky)
+
+This year at #OHBM_Brainhack_2025 in Brisbane, Australia, @nilearn.bsky.social wants to improve the plotting module of Nilearn by resolving existing issues, welcoming new ones, and improving the documentation. Join us in our efforts from June 21th to 23rd 2025.
 ```
 
 # Short name for the Discord chat channel (~15 chars)
