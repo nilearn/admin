@@ -97,17 +97,9 @@ We recommend starting with [Nilearn's basic tutorials](https://nilearn.github.io
 (If you welcome new contributors, please provide a list of good-first-issues (not required, but highly recommended), check [the guide](https://github.com/ohbm/hackathon2024/blob/main/.github/ISSUE_TEMPLATE/handbooks/projects.md#good-first-issues) for suggestions)
 
 ```txt
-Here are a few issues:
-- [Use nilearn's logger instead of print statement](https://github.com/nilearn/nilearn/issues/4443)
-- [Add scripts to collect stats for the nilearn repo](https://github.com/nilearn/nilearn/issues/3791).
-- [Update missing default value in docstrings](https://github.com/nilearn/nilearn/issues/3865)
-- [Write tests for existing functions](https://github.com/nilearn/nilearn/issues/2750)
-- [Add jupyterlite links to example gallery notebooks](https://github.com/nilearn/nilearn/issues/3951)
-
-You can also find an updated list of issues for the Brainhack [here](https://github.com/nilearn/nilearn/issues?q=is:open+is:issue+label:Hackathon)
+We have a Good first issues label and the list of issues can be found [here](https://github.com/nilearn/nilearn/labels/Good%20first%20issue)
 
 Depending upon your comfort level with the package, issues can also be filtered as follows:
-- [Good first issues](https://github.com/nilearn/nilearn/labels/Good%20first%20issue)
 - [Effort: Low](https://github.com/nilearn/nilearn/labels/Effort%3A%20low)
 - [Effort: Medium](https://github.com/nilearn/nilearn/labels/Effort%3A%20medium)
 - [Effort: High](https://github.com/nilearn/nilearn/labels/Effort%3A%20high)
@@ -118,11 +110,7 @@ Depending upon your comfort level with the package, issues can also be filtered 
 (Twitter-size summary of your project pitch, please check [the guide](https://github.com/ohbm/hackathon2024/blob/master/.github/ISSUE_TEMPLATE/handbooks/projects.md#twitter-size-summary-of-your-project-pitch))
 
 ```txt
-With @nilearn, we aim to simplify statistical analysis and machine learning on brain images in Python by fostering an open user-base and active contributing community.
-
-Find us @OHBM @brainhackorg in Seoul, Korea, from June 20th to 22nd 2024.
-
-https://nilearn.github.io/stable/index.html
+This year at #OHBM_Brainhack_2025 in Brisbane, Australia, @nilearn wants to improve the plotting module of Nilearn by resolving existing issues, welcoming new ones, and improving the documentation. Join us in our efforts from June 21th to 23rd 2025.
 ```
 
 # Short name for the Discord chat channel (~15 chars)
