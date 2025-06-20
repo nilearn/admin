@@ -81,7 +81,7 @@ Brisbane
 
 ```txt
 We welcome all users and contributions from various skill sets and levels. This can include opening discussions around improvements to the [documentation](https://nilearn.github.io/stable/index.html) and/or [code base](https://github.com/nilearn/nilearn
-), answering or commenting on questions or [issues raised on github](https://github.com/nilearn/nilearn/issues/4434) and [neurostars](https://neurostars.org/tag/nilearn), reviewing [pull requests](https://github.com/nilearn/nilearn/pulls), and [contributing code](https://nilearn.github.io/stable/development.html#how-to-contribute-to-nilearn).
+), answering or commenting on questions or [issues raised on github](https://github.com/nilearn/nilearn/issues) and [neurostars](https://neurostars.org/tag/nilearn), reviewing [pull requests](https://github.com/nilearn/nilearn/pulls), and [contributing code](https://nilearn.github.io/stable/development.html#how-to-contribute-to-nilearn).
 ```
 
 # Recommended tutorials for new contributors
