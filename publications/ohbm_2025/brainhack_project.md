@@ -89,7 +89,7 @@ We welcome all users and contributions from various skill sets and levels. This 
 (Please provide a list of tutorials that might be helpful for new contributors. Make sure to include the link to the tutorials here. Several great examples of such tutorials can be found at the following places: [traintrack online selection](https://ohbm.github.io/hackathon2023/traintrack/), [brainhack school modules](https://school-brainhack.github.io/modules/), [Neurohackademy lectures](https://neurohackademy.org/course_type/lectures/), and [brainhack's youtube channel](https://www.youtube.com/c/brainhackorg/playlists))
 
 ```txt
-We recommend starting with [Nilearn's basic tutorials](https://nilearn.github.io/stable/auto_examples/00_tutorials/index.html#) and the [introduction to Nilearn](https://nilearn.github.io/stable/introduction.html). This would help new contributors get familiar with the package and its functionalities. They can even provide feedback on the tutorials and suggest improvements.
+We recommend starting with [Nilearn's basic tutorials](https://nilearn.github.io/stable/auto_examples/00_tutorials/index.html) and the [introduction to Nilearn](https://nilearn.github.io/stable/introduction.html). This would help new contributors get familiar with the package and its functionalities. They can even provide feedback on the tutorials and suggest improvements.
 ```
 
 # Good first issues
